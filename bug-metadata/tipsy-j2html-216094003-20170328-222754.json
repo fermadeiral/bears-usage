@@ -1,0 +1,168 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "tipsy/j2html",
+  "metrics": {
+    "FailureNames": [
+      "java.lang.AssertionError"
+    ],
+    "StepsDurationsInSeconds": {
+      "CheckoutBuggyBuild": 2,
+      "ComputeClasspath": 4,
+      "ComputeTestDir": 0,
+      "ResolveDependency": 22,
+      "BuildProjectBuild": 6,
+      "TestProjectBuild": 7,
+      "ComputeSourceDir": 0,
+      "InitRepoToPush": 0,
+      "BuildProjectPreviousBuild": 17,
+      "GatherTestInformationBuild": 0,
+      "CloneRepository": 1,
+      "NopolRepair": 150,
+      "CheckoutPatchedBuild": 0,
+      "PushIncriminatedBuild": 2,
+      "CommitPatch": 2,
+      "TestProjectPreviousBuild": 8,
+      "GatherTestInformationPreviousBuild": 0
+    },
+    "PatchCommitUrl": "http://github.com/tipsy/j2html/commit/29e16df0576f33c86d529643dc1cc965e90fc89c",
+    "NbFailingTests": 5,
+    "BugCommitUrl": "http://github.com/tipsy/j2html/commit/71433418fae79b3b8951087604f6946d5cb303b7",
+    "NbFileTests": 14,
+    "NbCPU": 32,
+    "FreeMemory": 3273911016,
+    "TotalMemory": 3875536896,
+    "AngelicValuesByTest": {
+      "j2html/attributes/AttributeTest": 26,
+      "j2html/tags/TagCreatorTest": 18,
+      "j2html/tags/ComplexRenderTest": 31,
+      "j2html/tags/ConvenienceMethodTest": 24,
+      "j2html/tags/TagTest": 35
+    },
+    "FreeMemoryByStep": {
+      "CheckoutBuggyBuild": 756357448,
+      "ComputeClasspath": 694061064,
+      "ComputeTestDir": 745307064,
+      "ResolveDependency": 734755848,
+      "BuildProjectBuild": 3443743008,
+      "TestProjectBuild": 3428502432,
+      "ComputeSourceDir": 745307064,
+      "InitRepoToPush": 695819368,
+      "BuildProjectPreviousBuild": 729478496,
+      "GatherTestInformationBuild": 3428502432,
+      "CloneRepository": 780101472,
+      "NopolRepair": 3473579280,
+      "CheckoutPatchedBuild": 3466540856,
+      "PushIncriminatedBuild": 3289109400,
+      "CommitPatch": 3273911016,
+      "TestProjectPreviousBuild": 725961424,
+      "GatherTestInformationPreviousBuild": 722194320
+    },
+    "ReproductionDate": "May 11, 2017 10:46:54 AM",
+    "BuggyBuildId": 216093255,
+    "PatchedBuilId": 216094003,
+    "BuggyBuildURL": "http://travis-ci.org/tipsy/j2html/builds/216093255",
+    "PatchedBuildURL": "http://travis-ci.org/tipsy/j2html/builds/216094003",
+    "BuggyBuildDate": "Mar 28, 2017 10:22:45 PM",
+    "PatchedBuildDate": "Mar 28, 2017 10:27:54 PM",
+    "BugCommit": "71433418fae79b3b8951087604f6946d5cb303b7",
+    "PatchCommit": "29e16df0576f33c86d529643dc1cc965e90fc89c",
+    "PatchChangedFiles": 1,
+    "PatchAddedLines": 0,
+    "PatchDeletedLines": 0,
+    "NbRunningTests": 12,
+    "NbLibraries": 4,
+    "NbFileApp": 26
+  },
+  "bugCommit": "https://github.com/tipsy/j2html/compare/6903bcbe4d8c...71433418fae7",
+  "failingModule": "/root/workspace/tipsy/j2html/216093255",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 5,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 12,
+  "failing-test-cases": [
+    {
+      "className": "j2html.attributes.AttributeTest",
+      "failingMethods": [
+        "j2html.attributes.AttributeTest#testRender"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \" href\u003d\\\"http://example.com\\\"\"      but: was \" href\u003d\\\"http:\u0026#x2F;\u0026#x2F;example.com\\\"\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "j2html.tags.ConvenienceMethodTest",
+      "failingMethods": [
+        "j2html.tags.ConvenienceMethodTest#testAllConvenienceMethods"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \"\u003ca href\u003d\\\"http://example.com\\\"\u003e\u003c/a\u003e\"      but: was \"\u003ca href\u003d\\\"http:\u0026#x2F;\u0026#x2F;example.com\\\"\u003e\u003c/a\u003e\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "j2html.tags.TagCreatorTest",
+      "failingMethods": [
+        "j2html.tags.TagCreatorTest#testAllTags"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \"\u0026lt;script\u0026gt; and \u0026quot;\u0026lt;/script\u0026gt;\u0026quot;\"      but: was \"\u0026lt;script\u0026gt; and \u0026quot;\u0026lt;\u0026#x2F;script\u0026gt;\u0026quot;\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "j2html.tags.ComplexRenderTest",
+      "failingMethods": [
+        "j2html.tags.ComplexRenderTest#testComplexRender"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \"\u003c!DOCTYPE html\u003e\u003chtml\u003e\u003chead\u003e\u003ctitle\u003eTest\u003c/title\u003e\u003c/head\u003e\u003cbody\u003e\u003cheader\u003e\u003ch1\u003eTest Header \u003ca href\u003d\\\"http://example.com\\\"\u003ewith link\u003c/a\u003e.\u003c/h1\u003e\u003c/header\u003e\u003cmain\u003e\u003ch2\u003eTest Form\u003c/h2\u003e\u003cdiv\u003e\u003cinput type\u003d\\\"email\\\" name\u003d\\\"email\\\" placeholder\u003d\\\"Email\\\"\u003e\u003cinput type\u003d\\\"password\\\" name\u003d\\\"password\\\" placeholder\u003d\\\"Password\\\"\u003e\u003cbutton type\u003d\\\"submit\\\"\u003eLogin\u003c/button\u003e\u003c/div\u003e\u003c/main\u003e\u003cfooter class\u003d\\\"footer\\\" id\u003d\\\"id\\\"\u003eTest Footer\u003c/footer\u003e\u003cscript src\u003d\\\"/testScript.js\\\"\u003e\u003c/script\u003e\u003c/body\u003e\u003c/html\u003e\"      but: was \"\u003c!DOCTYPE html\u003e\u003chtml\u003e\u003chead\u003e\u003ctitle\u003eTest\u003c/title\u003e\u003c/head\u003e\u003cbody\u003e\u003cheader\u003e\u003ch1\u003eTest Header \u003ca href\u003d\\\"http:\u0026#x2F;\u0026#x2F;example.com\\\"\u003ewith link\u003c/a\u003e.\u003c/h1\u003e\u003c/header\u003e\u003cmain\u003e\u003ch2\u003eTest Form\u003c/h2\u003e\u003cdiv\u003e\u003cinput type\u003d\\\"email\\\" name\u003d\\\"email\\\" placeholder\u003d\\\"Email\\\"\u003e\u003cinput type\u003d\\\"password\\\" name\u003d\\\"password\\\" placeholder\u003d\\\"Password\\\"\u003e\u003cbutton type\u003d\\\"submit\\\"\u003eLogin\u003c/button\u003e\u003c/div\u003e\u003c/main\u003e\u003cfooter class\u003d\\\"footer\\\" id\u003d\\\"id\\\"\u003eTest Footer\u003c/footer\u003e\u003cscript src\u003d\\\"\u0026#x2F;testScript.js\\\"\u003e\u003c/script\u003e\u003c/body\u003e\u003c/html\u003e\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "j2html.tags.TagTest",
+      "failingMethods": [
+        "j2html.tags.TagTest#testRender"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: is \"\u003ca href\u003d\\\"http://example.com\\\"\u003e\u003c/a\u003e\"      but: was \"\u003ca href\u003d\\\"http:\u0026#x2F;\u0026#x2F;example.com\\\"\u003e\u003c/a\u003e\"",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}

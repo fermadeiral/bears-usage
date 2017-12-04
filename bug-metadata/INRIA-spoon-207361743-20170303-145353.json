@@ -1,0 +1,134 @@
+{
+  "totalNumberSkippingTests": 2,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "INRIA/spoon",
+  "metrics": {
+    "FailureNames": [
+      "org.junit.ComparisonFailure"
+    ],
+    "StepsDurationsInSeconds": {
+      "CheckoutBuggyBuildSourceCode": 0,
+      "ComputeClasspath": 4,
+      "ComputeTestDir": 0,
+      "GatherTestInformationPreviousBuildSourceCode": 0,
+      "ResolveDependency": 35,
+      "BuildProjectBuild": 19,
+      "BuildProjectPreviousBuildSourceCode": 44,
+      "TestProjectBuild": 316,
+      "ComputeSourceDir": 0,
+      "InitRepoToPush": 4,
+      "TestProjectPreviousBuildSourceCode": 277,
+      "GatherTestInformationBuild": 0,
+      "CloneRepository": 5,
+      "CheckoutPatchedBuild": 0,
+      "NopolRepair": 50,
+      "PushIncriminatedBuild": 5,
+      "CommitPatch": 4
+    },
+    "PatchCommitUrl": "http://github.com/INRIA/spoon/commit/6433c2c6641e4e3eb172d04cb39ac5373b38ed74",
+    "BugCommitUrl": "http://github.com/INRIA/spoon/commit/e7acf58718e88be92e7a50531510a152df03504d",
+    "NbFailingTests": 3,
+    "NbFileTests": 938,
+    "NbCPU": 32,
+    "FreeMemory": 844364944,
+    "TotalMemory": 4546101248,
+    "AngelicValuesByTest": {
+      "spoon/test/constructorcallnewclass/NewClassTest": 0,
+      "spoon/test/arrays/ArraysTest": 0,
+      "spoon/test/type/TypeTest": 0
+    },
+    "FreeMemoryByStep": {
+      "CheckoutBuggyBuildSourceCode": 538448424,
+      "ComputeClasspath": 629454856,
+      "ComputeTestDir": 569269112,
+      "GatherTestInformationPreviousBuildSourceCode": 461012424,
+      "ResolveDependency": 524495704,
+      "BuildProjectBuild": 1550907824,
+      "BuildProjectPreviousBuildSourceCode": 512687592,
+      "TestProjectBuild": 1510342824,
+      "ComputeSourceDir": 569269112,
+      "InitRepoToPush": 631064440,
+      "TestProjectPreviousBuildSourceCode": 488000712,
+      "GatherTestInformationBuild": 1509868216,
+      "CloneRepository": 599245600,
+      "CheckoutPatchedBuild": 1587886312,
+      "NopolRepair": 1696183216,
+      "PushIncriminatedBuild": 1023165840,
+      "CommitPatch": 844364944
+    },
+    "ReproductionDate": "May 9, 2017 8:20:41 PM",
+    "BuggyBuildId": 204567691,
+    "PatchedBuilId": 207361743,
+    "BuggyBuildURL": "http://travis-ci.org/INRIA/spoon/builds/204567691",
+    "PatchedBuildURL": "http://travis-ci.org/INRIA/spoon/builds/207361743",
+    "BuggyBuildDate": "Feb 23, 2017 1:46:32 PM",
+    "PatchedBuildDate": "Mar 3, 2017 2:53:53 PM",
+    "BugCommit": "e7acf58718e88be92e7a50531510a152df03504d",
+    "PatchCommit": "6433c2c6641e4e3eb172d04cb39ac5373b38ed74",
+    "PatchChangedFiles": 1,
+    "PatchAddedLines": 0,
+    "PatchDeletedLines": 0,
+    "NbRunningTests": 1026,
+    "NbLibraries": 10,
+    "NbFileApp": 926
+  },
+  "bugCommit": "https://github.com/INRIA/spoon/compare/f6d989a024b4...e7acf58718e8",
+  "failingModule": "/root/workspace/INRIA/spoon/204567691",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 3,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 1026,
+  "failing-test-cases": [
+    {
+      "className": "spoon.test.constructorcallnewclass.NewClassTest",
+      "failingMethods": [
+        "spoon.test.constructorcallnewclass.NewClassTest#testCtNewClassInNoClasspath"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[org.apache.lucene.store.]Lock$With\u003e but was:\u003c[]Lock$With\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "spoon.test.arrays.ArraysTest",
+      "failingMethods": [
+        "spoon.test.arrays.ArraysTest#testInitializeWithNewArray"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cnew [com.example.]Type[list.size()]\u003e but was:\u003cnew []Type[list.size()]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "spoon.test.type.TypeTest",
+      "failingMethods": [
+        "spoon.test.type.TypeTest#test"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[android.content.]DialogInterface$OnCl...\u003e but was:\u003c[]DialogInterface$OnCl...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}

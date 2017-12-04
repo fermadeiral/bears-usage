@@ -1,0 +1,282 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "AsyncHttpClient/async-http-client",
+  "metrics": {
+    "FailureNames": [
+      "java.util.concurrent.ExecutionException",
+      "java.lang.AssertionError:"
+    ],
+    "StepsDurationsInSeconds": {
+      "CheckoutBuggyBuild": 3,
+      "ComputeClasspath": 4,
+      "ComputeTestDir": 0,
+      "ResolveDependency": 41,
+      "BuildProjectBuild": 11,
+      "TestProjectBuild": 191,
+      "ComputeSourceDir": 0,
+      "InitRepoToPush": 1,
+      "BuildProjectPreviousBuild": 32,
+      "GatherTestInformationBuild": 0,
+      "CloneRepository": 7,
+      "NopolRepair": 29,
+      "CheckoutPatchedBuild": 0,
+      "PushIncriminatedBuild": 3,
+      "CommitPatch": 2,
+      "TestProjectPreviousBuild": 182,
+      "GatherTestInformationPreviousBuild": 0
+    },
+    "BugCommitUrl": "http://github.com/AsyncHttpClient/async-http-client/commit/4594135259d4fd593395d6f5c2a73f49ce738673",
+    "NbFailingTests": 22,
+    "PatchCommitUrl": "http://github.com/AsyncHttpClient/async-http-client/commit/7a70b80327c62a5482e0c950aac6763c7c281b34",
+    "ReproductionDate": "May 15, 2017 7:19:39 PM",
+    "BuggyBuildId": 199372870,
+    "PatchedBuilId": 199393627,
+    "BuggyBuildURL": "http://travis-ci.org/AsyncHttpClient/async-http-client/builds/199372870",
+    "PatchedBuildURL": "http://travis-ci.org/AsyncHttpClient/async-http-client/builds/199393627",
+    "BuggyBuildDate": "Feb 7, 2017 9:50:45 PM",
+    "PatchedBuildDate": "Feb 7, 2017 10:52:43 PM",
+    "BugCommit": "4594135259d4fd593395d6f5c2a73f49ce738673",
+    "PatchCommit": "7a70b80327c62a5482e0c950aac6763c7c281b34",
+    "PatchChangedFiles": 1,
+    "PatchAddedLines": 0,
+    "PatchDeletedLines": 0,
+    "NbRunningTests": 493,
+    "NbLibraries": 54,
+    "NbFileApp": 444,
+    "NbFileTests": 228,
+    "NbCPU": 32,
+    "FreeMemory": 1166444568,
+    "TotalMemory": 2646605824,
+    "AngelicValuesByTest": {
+      "org/asynchttpclient/ws/ByteMessageTest": 0,
+      "org/asynchttpclient/ws/WebSocketWriteCompleteListenerTest": 0,
+      "org/asynchttpclient/ws/CloseCodeReasonMessageTest": 0,
+      "org/asynchttpclient/ws/RedirectTest": 0,
+      "org/asynchttpclient/ws/ProxyTunnellingTest": 0,
+      "org/asynchttpclient/ws/TextMessageTest": 0
+    },
+    "FreeMemoryByStep": {
+      "CheckoutBuggyBuild": 707656112,
+      "ComputeClasspath": 560809696,
+      "ComputeTestDir": 681622656,
+      "ResolveDependency": 664110544,
+      "BuildProjectBuild": 1444651856,
+      "TestProjectBuild": 1433637240,
+      "ComputeSourceDir": 688454264,
+      "InitRepoToPush": 563993168,
+      "BuildProjectPreviousBuild": 654558040,
+      "GatherTestInformationBuild": 1427007384,
+      "CloneRepository": 767962368,
+      "NopolRepair": 1504851248,
+      "CheckoutPatchedBuild": 1465066216,
+      "PushIncriminatedBuild": 1223414040,
+      "CommitPatch": 1166444568,
+      "TestProjectPreviousBuild": 645798784,
+      "GatherTestInformationPreviousBuild": 638963208
+    }
+  },
+  "bugCommit": "https://github.com/AsyncHttpClient/async-http-client/compare/39757f37cf9a...4594135259d4",
+  "failingModule": "/root/workspace/AsyncHttpClient/async-http-client/199372870/client",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 22,
+  "error-types": [
+    "java.util.concurrent.ExecutionException",
+    "java.lang.AssertionError:"
+  ],
+  "totalNumberRunningTests": 493,
+  "failing-test-cases": [
+    {
+      "className": "org.asynchttpclient.ws.ByteMessageTest",
+      "failingMethods": [
+        "org.asynchttpclient.ws.ByteMessageTest#echoTwoMessagesTest",
+        "org.asynchttpclient.ws.ByteMessageTest#echoByte",
+        "org.asynchttpclient.ws.ByteMessageTest#echoOnOpenMessagesTest"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.asynchttpclient.ws.RedirectTest",
+      "failingMethods": [
+        "org.asynchttpclient.ws.RedirectTest#testRedirectToWSResource"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.asynchttpclient.ws.CloseCodeReasonMessageTest",
+      "failingMethods": [
+        "org.asynchttpclient.ws.CloseCodeReasonMessageTest#onCloseWithCodeServerClose",
+        "org.asynchttpclient.ws.CloseCodeReasonMessageTest#onCloseWithCode"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.asynchttpclient.ws.TextMessageTest",
+      "failingMethods": [
+        "org.asynchttpclient.ws.TextMessageTest#echoText",
+        "org.asynchttpclient.ws.TextMessageTest#onClose",
+        "org.asynchttpclient.ws.TextMessageTest#onOpen",
+        "org.asynchttpclient.ws.TextMessageTest#onTimeoutCloseTest",
+        "org.asynchttpclient.ws.TextMessageTest#echoTwoMessagesTest",
+        "org.asynchttpclient.ws.TextMessageTest#onEmptyListenerTest",
+        "org.asynchttpclient.ws.TextMessageTest#echoDoubleListenerText",
+        "org.asynchttpclient.ws.TextMessageTest#echoTextAndThenClose"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError:",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        }
+      ],
+      "nbFailures": 8,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.asynchttpclient.ws.ProxyTunnellingTest",
+      "failingMethods": [
+        "org.asynchttpclient.ws.ProxyTunnellingTest#echoWSSText",
+        "org.asynchttpclient.ws.ProxyTunnellingTest#echoWSText"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest",
+      "failingMethods": [
+        "org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest#sendByteMessage",
+        "org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest#sendTextMessage",
+        "org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest#streamText",
+        "org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest#sendPongMessage",
+        "org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest#streamBytes",
+        "org.asynchttpclient.ws.WebSocketWriteCompleteListenerTest#sendPingMessage"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        },
+        {
+          "failureName": "java.util.concurrent.ExecutionException",
+          "failureDetail": "java.lang.IllegalStateException: Invalid Status Code 0",
+          "isError": false
+        }
+      ],
+      "nbFailures": 6,
+      "nbErrors": 0
+    }
+  ]
+}

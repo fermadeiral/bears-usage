@@ -1,0 +1,183 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "cdk/cdk",
+  "metrics": {
+    "FailureNames": [
+      "java.lang.AssertionError:",
+      "java.lang.AssertionError",
+      "java.lang.NullPointerException:"
+    ],
+    "StepsDurationsInSeconds": {
+      "CheckoutBuggyBuildSourceCode": 0,
+      "ComputeClasspath": 2,
+      "ComputeTestDir": 0,
+      "GatherTestInformationPreviousBuildSourceCode": 0,
+      "ResolveDependency": 19,
+      "BuildProjectBuild": 10,
+      "BuildProjectPreviousBuildSourceCode": 161,
+      "TestProjectBuild": 83,
+      "ComputeSourceDir": 0,
+      "InitRepoToPush": 6,
+      "TestProjectPreviousBuildSourceCode": 14,
+      "GatherTestInformationBuild": 0,
+      "CloneRepository": 332,
+      "CheckoutPatchedBuild": 0,
+      "NopolRepair": 97,
+      "PushIncriminatedBuild": 17,
+      "CommitPatch": 7
+    },
+    "BugCommitUrl": "http://github.com/cdk/cdk/commit/10a0417678c2dff8ee967499a139ec7f48bf8ecc",
+    "NbFailingTests": 11,
+    "PatchCommitUrl": "http://github.com/cdk/cdk/commit/3d566b8f8be48030a25a31024a68d00e03887a8e",
+    "ReproductionDate": "May 11, 2017 12:33:12 PM",
+    "BuggyBuildId": 227131774,
+    "PatchedBuilId": 227345051,
+    "BuggyBuildURL": "http://travis-ci.org/cdk/cdk/builds/227131774",
+    "PatchedBuildURL": "http://travis-ci.org/cdk/cdk/builds/227345051",
+    "BuggyBuildDate": "Apr 29, 2017 3:09:54 PM",
+    "PatchedBuildDate": "Apr 30, 2017 2:13:29 PM",
+    "BugCommit": "10a0417678c2dff8ee967499a139ec7f48bf8ecc",
+    "PatchCommit": "3d566b8f8be48030a25a31024a68d00e03887a8e",
+    "PatchChangedFiles": 2,
+    "PatchAddedLines": 0,
+    "PatchDeletedLines": 0,
+    "NbRunningTests": 12067,
+    "NbLibraries": 29,
+    "NbFileApp": 2652,
+    "NbFileTests": 2162,
+    "NbCPU": 56,
+    "FreeMemory": 5818456768,
+    "TotalMemory": 11780751360,
+    "AngelicValuesByTest": {
+      "org/openscience/cdk/io/MDLV2000ReaderTest": 0,
+      "org/openscience/cdk/io/MDLV2000AtomBlockTest": 0,
+      "org/openscience/cdk/io/MDLV2000WriterTest": 0
+    },
+    "FreeMemoryByStep": {
+      "CheckoutBuggyBuildSourceCode": 1103588992,
+      "ComputeClasspath": 1517291592,
+      "ComputeTestDir": 1224158704,
+      "GatherTestInformationPreviousBuildSourceCode": 987573840,
+      "ResolveDependency": 1079133896,
+      "BuildProjectBuild": 9623624608,
+      "BuildProjectPreviousBuildSourceCode": 1043877600,
+      "TestProjectBuild": 9461931488,
+      "ComputeSourceDir": 1275775984,
+      "InitRepoToPush": 1540751000,
+      "TestProjectPreviousBuildSourceCode": 1030657560,
+      "GatherTestInformationBuild": 9192068712,
+      "CloneRepository": 1440855552,
+      "CheckoutPatchedBuild": 9743651464,
+      "NopolRepair": 9894311752,
+      "PushIncriminatedBuild": 6388429272,
+      "CommitPatch": 5818456768
+    }
+  },
+  "bugCommit": "https://github.com/cdk/cdk/compare/baffeee14f3d...10a0417678c2",
+  "failingModule": "/root/workspace/cdk/cdk/227131774/storage/io",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 10,
+  "error-types": [
+    "java.lang.AssertionError:",
+    "java.lang.AssertionError",
+    "java.lang.NullPointerException:"
+  ],
+  "totalNumberRunningTests": 12067,
+  "failing-test-cases": [
+    {
+      "className": "org.openscience.cdk.io.MDLV2000ReaderTest",
+      "failingMethods": [
+        "org.openscience.cdk.io.MDLV2000ReaderTest#testReading0DStereochemistryWithHydrogen",
+        "org.openscience.cdk.io.MDLV2000ReaderTest#radicalsReflectedInHydrogenCount",
+        "org.openscience.cdk.io.MDLV2000ReaderTest#testReadValence",
+        "org.openscience.cdk.io.MDLV2000ReaderTest#bismuth_ion_valence",
+        "org.openscience.cdk.io.MDLV2000ReaderTest#e_butene_2D",
+        "org.openscience.cdk.io.MDLV2000ReaderTest#e_butene_3D"
+      ],
+      "erroringMethods": [
+        "org.openscience.cdk.io.MDLV2000ReaderTest#testMassNumber"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003cANTI_CLOCKWISE\u003e\n     but: was \u003cCLOCKWISE\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003c8\u003e\n     but: was \u003c0\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003c4\u003e\n     but: was \u003c3\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003c3\u003e\n     but: was \u003c0\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError:",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError:",
+          "isError": false
+        }
+      ],
+      "nbFailures": 6,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.openscience.cdk.io.MDLV2000WriterTest",
+      "failingMethods": [
+        "org.openscience.cdk.io.MDLV2000WriterTest#testAtomParity"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError:",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.openscience.cdk.io.MDLV2000AtomBlockTest",
+      "failingMethods": [
+        "org.openscience.cdk.io.MDLV2000AtomBlockTest#massDiff_c11",
+        "org.openscience.cdk.io.MDLV2000AtomBlockTest#massDiff_c14",
+        "org.openscience.cdk.io.MDLV2000AtomBlockTest#massDiff_c13"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003c11\u003e\n     but: was null",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003c13\u003e\n     but: was null",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: is \u003c14\u003e\n     but: was null",
+          "isError": false
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 0
+    }
+  ]
+}

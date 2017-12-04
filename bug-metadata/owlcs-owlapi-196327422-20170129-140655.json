@@ -1,0 +1,100 @@
+{
+  "totalNumberSkippingTests": 45,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 1,
+  "repo": "owlcs/owlapi",
+  "metrics": {
+    "FailureNames": [
+      "org.semanticweb.owlapi.io.UnparsableOntologyException"
+    ],
+    "StepsDurationsInSeconds": {
+      "CheckoutBuggyBuildSourceCode": 0,
+      "ComputeClasspath": 5,
+      "ComputeTestDir": 0,
+      "GatherTestInformationPreviousBuildSourceCode": 0,
+      "ResolveDependency": 19,
+      "BuildProjectBuild": 39,
+      "BuildProjectPreviousBuildSourceCode": 62,
+      "TestProjectBuild": 59,
+      "ComputeSourceDir": 0,
+      "InitRepoToPush": 3,
+      "TestProjectPreviousBuildSourceCode": 75,
+      "GatherTestInformationBuild": 0,
+      "CloneRepository": 31,
+      "CheckoutPatchedBuild": 0,
+      "NopolRepair": 60,
+      "PushIncriminatedBuild": 5,
+      "CommitPatch": 4
+    },
+    "BugCommitUrl": "http://github.com/owlcs/owlapi/commit/b2afcdc26dd5d2a2e03fd1a613200c007e0802fa",
+    "NbFailingTests": 1,
+    "PatchCommitUrl": "http://github.com/owlcs/owlapi/commit/8192738dcd17f2e7ccf3e47f3e246703c7436fce",
+    "ReproductionDate": "Aug 24, 2017 6:47:14 PM",
+    "BuggyBuildId": 196234047,
+    "PatchedBuilId": 196327422,
+    "BuggyBuildURL": "http://travis-ci.org/owlcs/owlapi/builds/196234047",
+    "PatchedBuildURL": "http://travis-ci.org/owlcs/owlapi/builds/196327422",
+    "BuggyBuildDate": "Jan 29, 2017 12:01:38 AM",
+    "PatchedBuildDate": "Jan 29, 2017 2:06:55 PM",
+    "BugCommit": "b2afcdc26dd5d2a2e03fd1a613200c007e0802fa",
+    "PatchCommit": "8192738dcd17f2e7ccf3e47f3e246703c7436fce",
+    "PatchChangedFiles": 8,
+    "PatchAddedLines": 0,
+    "PatchDeletedLines": 0,
+    "NbRunningTests": 6571,
+    "NbLibraries": 55,
+    "NbFileApp": 3034,
+    "NbFileTests": 526,
+    "NbCPU": 32,
+    "FreeMemory": 3483152528,
+    "TotalMemory": 5463605248,
+    "AngelicValuesByTest": {
+      "org/semanticweb/owlapi/api/test/syntax/TurtleTestCase": 0
+    },
+    "FreeMemoryByStep": {
+      "CheckoutBuggyBuildSourceCode": 401596248,
+      "ComputeClasspath": 878453392,
+      "ComputeTestDir": 518846824,
+      "GatherTestInformationPreviousBuildSourceCode": 309592432,
+      "ResolveDependency": 378508160,
+      "BuildProjectBuild": 4525481456,
+      "BuildProjectPreviousBuildSourceCode": 358476120,
+      "TestProjectBuild": 4466131144,
+      "ComputeSourceDir": 528563664,
+      "InitRepoToPush": 886148792,
+      "TestProjectPreviousBuildSourceCode": 338742720,
+      "GatherTestInformationBuild": 4414661416,
+      "CloneRepository": 674703240,
+      "CheckoutPatchedBuild": 4689626576,
+      "NopolRepair": 4806024592,
+      "PushIncriminatedBuild": 3742776784,
+      "CommitPatch": 3483152528
+    }
+  },
+  "bugCommit": "https://github.com/owlcs/owlapi/compare/2947822a95a7...b2afcdc26dd5",
+  "failingModule": "/root/workspace/owlcs/owlapi/196234047/contract",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "org.semanticweb.owlapi.io.UnparsableOntologyException"
+  ],
+  "totalNumberRunningTests": 6571,
+  "failing-test-cases": [
+    {
+      "className": "org.semanticweb.owlapi.api.test.syntax.TurtleTestCase",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.semanticweb.owlapi.api.test.syntax.TurtleTestCase#shouldParseFixedQuotesLiterals6"
+      ],
+      "failures": [
+        {
+          "failureName": "org.semanticweb.owlapi.io.UnparsableOntologyException",
+          "failureDetail": "Problem parsing urn:test#literals\nCould not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.\nThe following parsers were tried:\n1) org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser@736f0566\n\n\nDetailed logs:\n--------------------------------------------------------------------------------\nParser: org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser@736f0566\n    Stack trace:\nEncountered \" \u003cPN_CHARS\u003e \"- \"\" at line 1, column 34.\nWas expecting:\n    \".\" ...\n            org.semanticweb.owlapi.rdf.turtle.parser.TurtleParser.generateParseException(TurtleParser.java:1960)\n        org.semanticweb.owlapi.rdf.turtle.parser.TurtleParser.jj_consume_token(TurtleParser.java:1829)\n        org.semanticweb.owlapi.rdf.turtle.parser.TurtleParser.parseDocument(TurtleParser.java:111)\n        org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser.parse(TurtleOntologyParser.java:48)\n        org.semanticweb.owlapi.io.OWLOntologyDocumentSourceBase.acceptParser(OWLOntologyDocumentSourceBase.java:102)\n        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:190)\n        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.load(OWLOntologyManagerImpl.java:997)\n        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:961)\n        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:910)\n        org.semanticweb.owlapi.api.test.baseclasses.TestBase.loadOntologyFromString(TestBase.java:473)\n\n\n",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "totalNumberSkippingTests": 3,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "fabric8io/docker-maven-plugin",
+  "metrics": {
+    "FailureNames": [
+      "java.lang.AssertionError"
+    ],
+    "StepsDurationsInSeconds": {
+      "CheckoutBuggyBuildSourceCode": 0,
+      "ComputeClasspath": 4,
+      "ComputeTestDir": 0,
+      "GatherTestInformationPreviousBuildSourceCode": 0,
+      "ResolveDependency": 50,
+      "BuildProjectBuild": 17,
+      "BuildProjectPreviousBuildSourceCode": 58,
+      "TestProjectBuild": 48,
+      "ComputeSourceDir": 0,
+      "InitRepoToPush": 1,
+      "TestProjectPreviousBuildSourceCode": 51,
+      "GatherTestInformationBuild": 0,
+      "CloneRepository": 13,
+      "CheckoutPatchedBuild": 0,
+      "NopolRepair": 14,
+      "PushIncriminatedBuild": 3,
+      "CommitPatch": 2
+    },
+    "PatchCommitUrl": "http://github.com/fabric8io/docker-maven-plugin/commit/ab73096e5b6e2eaab7e15ac58e95d51c45887955",
+    "NbFailingTests": 3,
+    "BugCommitUrl": "http://github.com/fabric8io/docker-maven-plugin/commit/70d49aed26757f1fa18650d6923ff934905fb179",
+    "ReproductionDate": "May 17, 2017 4:24:21 PM",
+    "BuggyBuildId": 188335089,
+    "PatchedBuilId": 188341607,
+    "BuggyBuildURL": "http://travis-ci.org/fabric8io/docker-maven-plugin/builds/188335089",
+    "PatchedBuildURL": "http://travis-ci.org/fabric8io/docker-maven-plugin/builds/188341607",
+    "BuggyBuildDate": "Jan 2, 2017 9:30:23 PM",
+    "PatchedBuildDate": "Jan 2, 2017 9:58:13 PM",
+    "BugCommit": "70d49aed26757f1fa18650d6923ff934905fb179",
+    "PatchCommit": "ab73096e5b6e2eaab7e15ac58e95d51c45887955",
+    "PatchChangedFiles": 1,
+    "PatchAddedLines": 0,
+    "PatchDeletedLines": 0,
+    "NbRunningTests": 276,
+    "NbLibraries": 78,
+    "NbFileApp": 258,
+    "NbFileTests": 96,
+    "NbCPU": 32,
+    "FreeMemory": 684077880,
+    "TotalMemory": 1147142144,
+    "AngelicValuesByTest": {
+      "io/fabric8/maven/docker/UrlBuilderTest": 0
+    },
+    "FreeMemoryByStep": {
+      "CheckoutBuggyBuildSourceCode": 584349568,
+      "ComputeClasspath": 721420472,
+      "ComputeTestDir": 596744360,
+      "GatherTestInformationPreviousBuildSourceCode": 545729000,
+      "ResolveDependency": 569066112,
+      "BuildProjectBuild": 797115456,
+      "BuildProjectPreviousBuildSourceCode": 562281152,
+      "TestProjectBuild": 788721872,
+      "ComputeSourceDir": 596744360,
+      "InitRepoToPush": 723853720,
+      "TestProjectPreviousBuildSourceCode": 559265480,
+      "GatherTestInformationBuild": 783781176,
+      "CloneRepository": 620052896,
+      "CheckoutPatchedBuild": 800506344,
+      "NopolRepair": 835096368,
+      "PushIncriminatedBuild": 712900656,
+      "CommitPatch": 684077880
+    }
+  },
+  "bugCommit": "https://github.com/fabric8io/docker-maven-plugin/compare/e355830b050a...70d49aed2675",
+  "failingModule": "/root/workspace/fabric8io/docker-maven-plugin/188335089",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 3,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 276,
+  "failing-test-cases": [
+    {
+      "className": "io.fabric8.maven.docker.UrlBuilderTest",
+      "failingMethods": [
+        "io.fabric8.maven.docker.UrlBuilderTest#containerLogs",
+        "io.fabric8.maven.docker.UrlBuilderTest#buildImage",
+        "io.fabric8.maven.docker.UrlBuilderTest#tagContainer"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c/1.0/images/t1%3Alatest/tag?force\u003d1\u0026repo\u003dnew\u0026tag\u003dtag1\u003e but was:\u003c/1.0/images/t1%3Alatest/tag?repo\u003dnew\u0026force\u003d1\u0026tag\u003dtag1\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c/1.0/build?dockerfile\u003ddf\u0026nocache\u003d0\u0026rm\u003d1\u0026t\u003dimage1\u003e but was:\u003c/1.0/build?t\u003dimage1\u0026dockerfile\u003ddf\u0026nocache\u003d0\u0026rm\u003d1\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c/1.0/containers/cid/logs?follow\u003d0\u0026stderr\u003d1\u0026stdout\u003d1\u0026timestamps\u003d1\u003e but was:\u003c/1.0/containers/cid/logs?stdout\u003d1\u0026timestamps\u003d1\u0026stderr\u003d1\u0026follow\u003d0\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 3,
+      "nbErrors": 0
+    }
+  ]
+}

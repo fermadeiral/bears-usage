@@ -1,0 +1,130 @@
+{
+  "totalNumberSkippingTests": 7,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "sakaiproject/sakai",
+  "metrics": {
+    "FailureNames": [
+      "org.junit.ComparisonFailure"
+    ],
+    "StepsDurationsInSeconds": {
+      "CheckoutBuggyBuildSourceCode": 3,
+      "ComputeClasspath": 3,
+      "ComputeTestDir": 1,
+      "GatherTestInformationPreviousBuildSourceCode": 1,
+      "ResolveDependency": 56,
+      "BuildProjectBuild": 110,
+      "BuildProjectPreviousBuildSourceCode": 394,
+      "TestProjectBuild": 349,
+      "ComputeSourceDir": 2,
+      "InitRepoToPush": 33,
+      "TestProjectPreviousBuildSourceCode": 274,
+      "GatherTestInformationBuild": 0,
+      "CloneRepository": 93,
+      "CheckoutPatchedBuild": 1,
+      "NopolRepair": 32,
+      "PushIncriminatedBuild": 24,
+      "CommitPatch": 34
+    },
+    "PatchCommitUrl": "http://github.com/sakaiproject/sakai/commit/c4e919541718ab0f9e0f2fc917fedc0de6167e24",
+    "BugCommitUrl": "http://github.com/sakaiproject/sakai/commit/6d1680ac21299bfdac82997493cfbfbb8f543bd0",
+    "NbFailingTests": 6,
+    "ReproductionDate": "Jun 12, 2017 3:12:49 PM",
+    "BuggyBuildId": 232895034,
+    "PatchedBuilId": 233703615,
+    "BuggyBuildURL": "http://travis-ci.org/sakaiproject/sakai/builds/232895034",
+    "PatchedBuildURL": "http://travis-ci.org/sakaiproject/sakai/builds/233703615",
+    "BuggyBuildDate": "May 16, 2017 6:39:57 PM",
+    "PatchedBuildDate": "May 18, 2017 6:39:17 PM",
+    "BugCommit": "6d1680ac21299bfdac82997493cfbfbb8f543bd0",
+    "PatchCommit": "c4e919541718ab0f9e0f2fc917fedc0de6167e24",
+    "PatchChangedFiles": 1,
+    "PatchAddedLines": 0,
+    "PatchDeletedLines": 0,
+    "NbRunningTests": 837,
+    "NbLibraries": 166,
+    "NbFileApp": 5649,
+    "NbFileTests": 489,
+    "NbCPU": 32,
+    "FreeMemory": 2992385232,
+    "TotalMemory": 3875536896,
+    "AngelicValuesByTest": {
+      "org/sakaiproject/util/impl/FormattedTextTest": 0
+    },
+    "FreeMemoryByStep": {
+      "CheckoutBuggyBuildSourceCode": 692523624,
+      "ComputeClasspath": 1989195864,
+      "ComputeTestDir": 1193181624,
+      "GatherTestInformationPreviousBuildSourceCode": 1916749376,
+      "ResolveDependency": 660727104,
+      "BuildProjectBuild": 1503262984,
+      "BuildProjectPreviousBuildSourceCode": 429721600,
+      "TestProjectBuild": 1414777600,
+      "ComputeSourceDir": 1818173192,
+      "InitRepoToPush": 1998637632,
+      "TestProjectPreviousBuildSourceCode": 375832280,
+      "GatherTestInformationBuild": 1325177776,
+      "CloneRepository": 1625087952,
+      "CheckoutPatchedBuild": 1627619752,
+      "NopolRepair": 1063251072,
+      "PushIncriminatedBuild": 1819385272,
+      "CommitPatch": 2992385232
+    }
+  },
+  "bugCommit": "https://github.com/sakaiproject/sakai/compare/ffd425e467170b11bcfe555ec287181f9eda61bc...6d1680ac21299bfdac82997493cfbfbb8f543bd0",
+  "failingModule": "/root/workspace/sakaiproject/sakai/232895034/kernel/kernel-impl",
+  "hostname": "spirals-vortex",
+  "totalNumberFailingTests": 6,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 837,
+  "failing-test-cases": [
+    {
+      "className": "org.sakaiproject.util.impl.FormattedTextTest",
+      "failingMethods": [
+        "org.sakaiproject.util.impl.FormattedTextTest#testAntisamyProcessFormattedText",
+        "org.sakaiproject.util.impl.FormattedTextTest#testTargetNotOverridden",
+        "org.sakaiproject.util.impl.FormattedTextTest#testProcessAnchorName",
+        "org.sakaiproject.util.impl.FormattedTextTest#testProcessAnchorMailto",
+        "org.sakaiproject.util.impl.FormattedTextTest#testProcessAnchorRelative",
+        "org.sakaiproject.util.impl.FormattedTextTest#testProcessAnchor"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...tml\" target\u003d\"_blank\"[ rel\u003d\"noopener\"]\u003e\u003e but was:\u003c...tml\" target\u003d\"_blank\"[]\u003e\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...rg/\" target\u003d\"_blank\"[ rel\u003d\"noopener\"]\u003e\u003e but was:\u003c...rg/\" target\u003d\"_blank\"[]\u003e\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...hor\" target\u003d\"_blank\"[ rel\u003d\"noopener\"]\u003e\u003e but was:\u003c...hor\" target\u003d\"_blank\"[]\u003e\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...com\" target\u003d\"_blank\"[ rel\u003d\"noopener\"]\u003e\u003e but was:\u003c...com\" target\u003d\"_blank\"[]\u003e\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...tml\" target\u003d\"_blank\"[ rel\u003d\"noopener\"]\u003e\u003e but was:\u003c...tml\" target\u003d\"_blank\"[]\u003e\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...ld;\" target\u003d\"_blank\"[ rel\u003d\"noopener\"]\u003eblah\u003c/a\u003e\u003cdiv\u003ehello ...\u003e but was:\u003c...ld;\" target\u003d\"_blank\"[]\u003eblah\u003c/a\u003e\u003cdiv\u003ehello ...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 6,
+      "nbErrors": 0
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "airlift/airlift",
+  "metrics": {
+    "FailureNames": [
+      "java.lang.AssertionError"
+    ],
+    "StepsDurationsInSeconds": {
+      "CheckoutBuggyBuildSourceCode": 0,
+      "ComputeClasspath": 2,
+      "ComputeTestDir": 0,
+      "GatherTestInformationPreviousBuildSourceCode": 0,
+      "ResolveDependency": 12,
+      "BuildProjectBuild": 111,
+      "BuildProjectPreviousBuildSourceCode": 152,
+      "TestProjectBuild": 231,
+      "ComputeSourceDir": 0,
+      "InitRepoToPush": 2,
+      "TestProjectPreviousBuildSourceCode": 155,
+      "GatherTestInformationBuild": 0,
+      "CloneRepository": 16,
+      "CheckoutPatchedBuild": 0,
+      "NopolRepair": 11,
+      "PushIncriminatedBuild": 21,
+      "CommitPatch": 3
+    },
+    "BugCommitUrl": "http://github.com/airlift/airlift/commit/73058b3f56644ee3e983b96ac3cc7d3dd256ba29",
+    "NbFailingTests": 1,
+    "PatchCommitUrl": "http://github.com/airlift/airlift/commit/bdf01a791d5d4b424ffb78bb9ebd92e99af62fe3",
+    "ReproductionDate": "Aug 31, 2017 9:41:44 AM",
+    "BuggyBuildId": 199058737,
+    "PatchedBuilId": 199455329,
+    "BuggyBuildURL": "http://travis-ci.org/airlift/airlift/builds/199058737",
+    "PatchedBuildURL": "http://travis-ci.org/airlift/airlift/builds/199455329",
+    "BuggyBuildDate": "Feb 7, 2017 2:54:28 AM",
+    "PatchedBuildDate": "Feb 8, 2017 2:23:22 AM",
+    "BugCommit": "73058b3f56644ee3e983b96ac3cc7d3dd256ba29",
+    "PatchCommit": "bdf01a791d5d4b424ffb78bb9ebd92e99af62fe3",
+    "PatchChangedFiles": 1,
+    "PatchAddedLines": 0,
+    "PatchDeletedLines": 0,
+    "NbRunningTests": 1706,
+    "NbLibraries": 61,
+    "NbFileApp": 556,
+    "NbFileTests": 348,
+    "NbCPU": 32,
+    "FreeMemory": 1120031464,
+    "TotalMemory": 1411907584,
+    "AngelicValuesByTest": {
+      "io/airlift/http/client/jetty/TestJettyHttpClientHttp2": 0
+    },
+    "FreeMemoryByStep": {
+      "CheckoutBuggyBuildSourceCode": 407991576,
+      "ComputeClasspath": 465360768,
+      "ComputeTestDir": 442519736,
+      "GatherTestInformationPreviousBuildSourceCode": 336749744,
+      "ResolveDependency": 394804120,
+      "BuildProjectBuild": 536923656,
+      "BuildProjectPreviousBuildSourceCode": 365254312,
+      "TestProjectBuild": 521948992,
+      "ComputeSourceDir": 481500488,
+      "InitRepoToPush": 466532864,
+      "TestProjectPreviousBuildSourceCode": 346260976,
+      "GatherTestInformationBuild": 508114768,
+      "CloneRepository": 568713408,
+      "CheckoutPatchedBuild": 560483456,
+      "NopolRepair": 616872168,
+      "PushIncriminatedBuild": 1184663640,
+      "CommitPatch": 1120031464
+    }
+  },
+  "bugCommit": "https://github.com/airlift/airlift/compare/d25ad56f635c...73058b3f5664",
+  "failingModule": "/root/workspace/airlift/airlift/199058737/http-client",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1706,
+  "failing-test-cases": [
+    {
+      "className": "io.airlift.http.client.jetty.TestJettyHttpClientHttp2",
+      "failingMethods": [
+        "io.airlift.http.client.jetty.TestJettyHttpClientHttp2#testConnectTimeout"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "unexpected exception: [java.util.concurrent.TimeoutException\n at org.eclipse.jetty.client.util.InputStreamResponseListener.get(InputStreamResponseListener.java:224)\n at io.airlift.http.client.jetty.JettyHttpClient.execute(JettyHttpClient.java:351)\n at io.airlift.http.client.jetty.TestJettyHttpClient.executeRequest(TestJettyHttpClient.java:58)\n at io.airlift.http.client.AbstractHttpClientTest.testConnectTimeout(AbstractHttpClientTest.java:216)\n at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n at java.lang.reflect.Method.invoke(Method.java:498)\n at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)\n at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)\n at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)\n at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n at java.util.concurrent.FutureTask.run(FutureTask.java:266)\n at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n at java.lang.Thread.run(Thread.java:745)\n]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}

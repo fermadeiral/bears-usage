@@ -1,0 +1,217 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 4,
+  "repo": "PebbleTemplates/pebble",
+  "metrics": {
+    "FailureNames": [
+      "com.mitchellbosecke.pebble.error.RuntimePebbleException",
+      "java.lang.AssertionError",
+      "org.junit.ComparisonFailure"
+    ],
+    "StepsDurationsInSeconds": {
+      "CheckoutBuggyBuildSourceCode": 0,
+      "ComputeClasspath": 8,
+      "ComputeTestDir": 0,
+      "GatherTestInformationPreviousBuildSourceCode": 0,
+      "ResolveDependency": 21,
+      "BuildProjectBuild": 40,
+      "BuildProjectPreviousBuildSourceCode": 90,
+      "TestProjectBuild": 19,
+      "ComputeSourceDir": 2,
+      "InitRepoToPush": 2,
+      "TestProjectPreviousBuildSourceCode": 22,
+      "GatherTestInformationBuild": 0,
+      "CloneRepository": 8,
+      "CheckoutPatchedBuild": 1,
+      "NopolRepair": 11699,
+      "PushIncriminatedBuild": 5,
+      "CommitPatch": 3
+    },
+    "BugCommitUrl": "http://github.com/PebbleTemplates/pebble/commit/b78c3d3012368dce1bed5b52237e0cb22d82b024",
+    "NbFailingTests": 20,
+    "PatchCommitUrl": "http://github.com/PebbleTemplates/pebble/commit/f39f7bc9cb272214be7bd564249d98f1950950cb",
+    "ReproductionDate": "Sep 5, 2017 3:50:15 PM",
+    "BuggyBuildId": 233353102,
+    "PatchedBuilId": 234887687,
+    "BuggyBuildURL": "http://travis-ci.org/PebbleTemplates/pebble/builds/233353102",
+    "PatchedBuildURL": "http://travis-ci.org/PebbleTemplates/pebble/builds/234887687",
+    "BuggyBuildDate": "May 17, 2017 8:48:41 PM",
+    "PatchedBuildDate": "May 22, 2017 6:22:27 PM",
+    "BugCommit": "b78c3d3012368dce1bed5b52237e0cb22d82b024",
+    "PatchCommit": "f39f7bc9cb272214be7bd564249d98f1950950cb",
+    "PatchChangedFiles": 17,
+    "PatchAddedLines": 0,
+    "PatchDeletedLines": 0,
+    "NbRunningTests": 488,
+    "NbLibraries": 8,
+    "NbFileApp": 366,
+    "NbFileTests": 90,
+    "NbCPU": 8,
+    "FreeMemory": 1450177144,
+    "TotalMemory": 2054684672,
+    "AngelicValuesByTest": {},
+    "FreeMemoryByStep": {
+      "CheckoutBuggyBuildSourceCode": 184585672,
+      "ComputeClasspath": 285230736,
+      "ComputeTestDir": 197424240,
+      "GatherTestInformationPreviousBuildSourceCode": 143008800,
+      "ResolveDependency": 171893840,
+      "BuildProjectBuild": 1652780712,
+      "BuildProjectPreviousBuildSourceCode": 159998128,
+      "TestProjectBuild": 1688303240,
+      "ComputeSourceDir": 197424240,
+      "InitRepoToPush": 288400736,
+      "TestProjectPreviousBuildSourceCode": 150748728,
+      "GatherTestInformationBuild": 1669693888,
+      "CloneRepository": 229509400,
+      "CheckoutPatchedBuild": 1843400120,
+      "NopolRepair": 572605872,
+      "PushIncriminatedBuild": 1734437976,
+      "CommitPatch": 1450177144
+    }
+  },
+  "bugCommit": "https://github.com/PebbleTemplates/pebble/compare/1d1a7f521523...b78c3d301236",
+  "failingModule": "/root/workspace/PebbleTemplates/pebble/233353102",
+  "hostname": "spirals-latour",
+  "totalNumberFailingTests": 16,
+  "error-types": [
+    "com.mitchellbosecke.pebble.error.RuntimePebbleException",
+    "java.lang.AssertionError",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 488,
+  "failing-test-cases": [
+    {
+      "className": "com.mitchellbosecke.pebble.StringInterpolationTest",
+      "failingMethods": [
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testSequentialInterpolations1",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testSimpleVariableInterpolation",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testStringWithNumberSignsAndInterpolation",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testVariableContainingInterplationSyntax",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testSequentialInterpolations0",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testDoubleClosedInterpolation",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testFunctionInInterpolation",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testExpressionInterpolation",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testSingleQuoteInsideInterpolation",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testUnclosedInterpolation",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testInterpolationWhitespace1",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testInterpolationWhitespace0",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testInterpolationWhitespace3",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testInterpolationWhitespace2",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testInterpolationWhitespace4",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testNewlineInInterpolation"
+      ],
+      "erroringMethods": [
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testInterpolationWithEscapedQuotes",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testNestedInterpolation1",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testNestedInterpolation0",
+        "com.mitchellbosecke.pebble.StringInterpolationTest#testStringInsideInterpolation"
+      ],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c1 plus 2 equals [3]\u003e but was:\u003c1 plus 2 equals [#{1 + 2}]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "com.mitchellbosecke.pebble.error.RuntimePebbleException",
+          "failureDetail": "com.mitchellbosecke.pebble.error.ParserException: Unexpected token of value \"inner\" and type NAME, expected token of type PRINT_END ({{ \"Outer: #{ \"inner\" }\" }}:1)",
+          "isError": true
+        },
+        {
+          "failureName": "com.mitchellbosecke.pebble.error.RuntimePebbleException",
+          "failureDetail": "com.mitchellbosecke.pebble.error.ParserException: Unexpected character [\\] ({{ \"The cow says: #{\"\\\"moo\\\"\"}\" }}:1)",
+          "isError": true
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cMaximum: [10] \u003e but was:\u003cMaximum: [#{ max(5, 10) }] \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[24]\u003e but was:\u003c[#{1+1}#{2+2}]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cThe [cow says moo and jumps over the moon]\u003e but was:\u003cThe [#{\u0027cow\u0027} says #{\u0027moo\u0027} and jumps #{\u0027over\u0027} the #{\u0027moon\u0027}]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[3]}\u003e but was:\u003c[#{3}]}\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cHey #{[1+1]}\u003e but was:\u003cHey #{[name]}\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "com.mitchellbosecke.pebble.error.RuntimePebbleException",
+          "failureDetail": "com.mitchellbosecke.pebble.error.ParserException: Unexpected character [#] ({{ \"Nested: #{ outer + \" #{ inner }\" }\" }}:1)",
+          "isError": true
+        },
+        {
+          "failureName": "com.mitchellbosecke.pebble.error.RuntimePebbleException",
+          "failureDetail": "com.mitchellbosecke.pebble.error.ParserException: Unexpected character [#] ({{ \"#{\"#{\"#{\u0027hi\u0027}\"}\"}\" }}:1)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Expected exception: com.mitchellbosecke.pebble.error.RuntimePebbleException",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cThe cow says: [moo#{moo]}\u003e but was:\u003cThe cow says: [#{\u0027moo\u0027 + \u0027#{moo}\u0027]}\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cHello, [joe]\u003e but was:\u003cHello, [#{name}]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cThe cow said #[moo]#\u003e but was:\u003cThe cow said #[#{\u0027moo\u0027}]#\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cOuter: [7]\u003e but was:\u003cOuter: [#{3+4}]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cOuter: [7]\u003e but was:\u003cOuter: [#{ 3 + 4 }]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cOuter:[7]\u003e but was:\u003cOuter:[#{ 3 + 4 }]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cOuter:[7] \u003e but was:\u003cOuter:[#{ 3 + 4 }] \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cOuter:  [7]  \u003e but was:\u003cOuter:  [#{ 3 + 4 }]  \u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003cSum \u003d [egg egg]\u003e but was:\u003cSum \u003d [#{ \u0027egg egg\u0027}]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 16,
+      "nbErrors": 4
+    }
+  ]
+}

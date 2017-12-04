@@ -1,0 +1,100 @@
+{
+  "totalNumberSkippingTests": 15,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "google/error-prone",
+  "metrics": {
+    "FailureNames": [
+      "java.lang.AssertionError"
+    ],
+    "StepsDurationsInSeconds": {
+      "CheckoutBuggyBuildSourceCode": 0,
+      "ComputeClasspath": 2,
+      "ComputeTestDir": 0,
+      "GatherTestInformationPreviousBuildSourceCode": 0,
+      "ResolveDependency": 25,
+      "BuildProjectBuild": 12,
+      "BuildProjectPreviousBuildSourceCode": 19,
+      "TestProjectBuild": 281,
+      "ComputeSourceDir": 0,
+      "InitRepoToPush": 2,
+      "TestProjectPreviousBuildSourceCode": 284,
+      "GatherTestInformationBuild": 0,
+      "CloneRepository": 41,
+      "CheckoutPatchedBuild": 0,
+      "NopolRepair": 12,
+      "PushIncriminatedBuild": 5,
+      "CommitPatch": 3
+    },
+    "NbFailingTests": 1,
+    "PatchCommitUrl": "http://github.com/google/error-prone/commit/0c3711c97aff6f84e3af2bd3c94de7c434a0bbb6",
+    "BugCommitUrl": "http://github.com/google/error-prone/commit/d41033b827bf4abd486d0d1af23a4814495fbb3f",
+    "NbLibraries": 54,
+    "NbFileApp": 1108,
+    "NbFileTests": 1522,
+    "NbCPU": 56,
+    "FreeMemory": 1729495720,
+    "TotalMemory": 3214934016,
+    "AngelicValuesByTest": {
+      "com/google/errorprone/bugpatterns/threadsafety/DoubleCheckedLockingTest": 0
+    },
+    "FreeMemoryByStep": {
+      "CheckoutBuggyBuildSourceCode": 1151625376,
+      "ComputeClasspath": 1424135576,
+      "ComputeTestDir": 1204433320,
+      "GatherTestInformationPreviousBuildSourceCode": 1581237296,
+      "ResolveDependency": 1126402376,
+      "BuildProjectBuild": 2279280504,
+      "BuildProjectPreviousBuildSourceCode": 1112581008,
+      "TestProjectBuild": 2264946088,
+      "ComputeSourceDir": 1204433320,
+      "InitRepoToPush": 1428003352,
+      "TestProjectPreviousBuildSourceCode": 1053838128,
+      "GatherTestInformationBuild": 2242769472,
+      "CloneRepository": 1297453976,
+      "CheckoutPatchedBuild": 2288836616,
+      "NopolRepair": 2399720232,
+      "PushIncriminatedBuild": 1865995192,
+      "CommitPatch": 1729495720
+    },
+    "ReproductionDate": "May 31, 2017 10:16:43 AM",
+    "BuggyBuildId": 228057106,
+    "PatchedBuilId": 228489663,
+    "BuggyBuildURL": "http://travis-ci.org/google/error-prone/builds/228057106",
+    "PatchedBuildURL": "http://travis-ci.org/google/error-prone/builds/228489663",
+    "BuggyBuildDate": "May 2, 2017 8:31:27 PM",
+    "PatchedBuildDate": "May 3, 2017 10:17:36 PM",
+    "BugCommit": "d41033b827bf4abd486d0d1af23a4814495fbb3f",
+    "PatchCommit": "0c3711c97aff6f84e3af2bd3c94de7c434a0bbb6",
+    "PatchChangedFiles": 3,
+    "PatchAddedLines": 0,
+    "PatchDeletedLines": 0,
+    "NbRunningTests": 2166
+  },
+  "bugCommit": "https://github.com/google/error-prone/compare/5c80d3d98f82...d41033b827bf",
+  "failingModule": "/root/workspace/google/error-prone/228057106/core",
+  "hostname": "spirals-spoon3r",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 2166,
+  "failing-test-cases": [
+    {
+      "className": "com.google.errorprone.bugpatterns.threadsafety.DoubleCheckedLockingTest",
+      "failingMethods": [
+        "com.google.errorprone.bugpatterns.threadsafety.DoubleCheckedLockingTest#b37896333"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "An unhandled exception was thrown by the Error Prone static analysis plugin.\n     Please report this at https://github.com/google/error-prone/issues/new and include the following:\n  \n     error-prone version: unknown version\n     Stack Trace:\n     java.lang.NullPointerException\n   at com.google.errorprone.bugpatterns.threadsafety.DoubleCheckedLocking.handleLocal(DoubleCheckedLocking.java:163)\n   at com.google.errorprone.bugpatterns.threadsafety.DoubleCheckedLocking.matchIf(DoubleCheckedLocking.java:76)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitIf(ErrorProneScanner.java:797)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitIf(ErrorProneScanner.java:144)\n   at com.sun.tools.javac.tree.JCTree$JCIf.accept(JCTree.java:1427)\n   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)\n   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)\n   at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)\n   at com.sun.source.util.TreeScanner.visitBlock(TreeScanner.java:248)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitBlock(ErrorProneScanner.java:575)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitBlock(ErrorProneScanner.java:144)\n   at com.sun.tools.javac.tree.JCTree$JCBlock.accept(JCTree.java:1026)\n   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)\n   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)\n   at com.sun.source.util.TreeScanner.visitMethod(TreeScanner.java:206)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitMethod(ErrorProneScanner.java:943)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitMethod(ErrorProneScanner.java:144)\n   at com.sun.tools.javac.tree.JCTree$JCMethodDecl.accept(JCTree.java:898)\n   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)\n   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:90)\n   at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)\n   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:113)\n   at com.sun.source.util.TreeScanner.visitClass(TreeScanner.java:187)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitClass(ErrorProneScanner.java:635)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitClass(ErrorProneScanner.java:144)\n   at com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:808)\n   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:82)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:89)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:43)\n   at com.sun.source.util.TreeScanner.scan(TreeScanner.java:105)\n   at com.sun.source.util.TreeScanner.scanAndReduce(TreeScanner.java:113)\n   at com.sun.source.util.TreeScanner.visitCompilationUnit(TreeScanner.java:144)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitCompilationUnit(ErrorProneScanner.java:650)\n   at com.google.errorprone.scanner.ErrorProneScanner.visitCompilationUnit(ErrorProneScanner.java:144)\n   at com.sun.tools.javac.tree.JCTree$JCCompilationUnit.accept(JCTree.java:591)\n   at com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:56)\n   at com.google.errorprone.scanner.Scanner.scan(Scanner.java:68)\n   at com.google.errorprone.scanner.ErrorProneScannerTransformer.apply(ErrorProneScannerTransformer.java:43)\n   at com.google.errorprone.ErrorProneAnalyzer.finished(ErrorProneAnalyzer.java:145)\n   at com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:120)\n   at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1425)\n   at com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1374)\n   at com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:973)\n   at com.sun.tools.javac.api.JavacTaskImpl.lambda$doCall$0(JavacTaskImpl.java:100)\n   at com.sun.tools.javac.api.JavacTaskImpl.handleExceptions(JavacTaskImpl.java:142)\n   at com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:96)\n   at com.sun.tools.javac.api.JavacTaskImpl.call(JavacTaskImpl.java:90)\n   at com.google.errorprone.BaseErrorProneCompiler.run(BaseErrorProneCompiler.java:137)\n   at com.google.errorprone.CompilationTestHelper.compile(CompilationTestHelper.java:289)\n   at com.google.errorprone.CompilationTestHelper.doTest(CompilationTestHelper.java:251)\n   at com.google.errorprone.bugpatterns.threadsafety.DoubleCheckedLockingTest.b37896333(DoubleCheckedLockingTest.java:180)\n   at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n   at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n   at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n   at java.lang.reflect.Method.invoke(Method.java:498)\n   at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n   at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n   at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n   at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n   at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:343)\n   at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:102)\n   at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:61)\n   at org.junit.runners.ParentRunner$3.run(ParentRunner.java:308)\n   at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:74)\n   at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:306)\n   at org.junit.runners.ParentRunner.access$000(ParentRunner.java:61)\n   at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:286)\n   at org.junit.runners.ParentRunner.run(ParentRunner.java:390)\n   at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)\n   at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)\n   at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n   at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)\n   at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)\n   at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)\n   at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}

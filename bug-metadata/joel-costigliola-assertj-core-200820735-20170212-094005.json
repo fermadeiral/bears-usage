@@ -1,0 +1,118 @@
+{
+  "totalNumberSkippingTests": 4,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "joel-costigliola/assertj-core",
+  "metrics": {
+    "FailureNames": [
+      "java.lang.AssertionError"
+    ],
+    "StepsDurationsInSeconds": {
+      "CheckoutBuggyBuildSourceCode": 0,
+      "ComputeClasspath": 8,
+      "ComputeTestDir": 0,
+      "GatherTestInformationPreviousBuildSourceCode": 1,
+      "ResolveDependency": 18,
+      "BuildProjectBuild": 17,
+      "BuildProjectPreviousBuildSourceCode": 36,
+      "TestProjectBuild": 16,
+      "ComputeSourceDir": 0,
+      "InitRepoToPush": 5,
+      "TestProjectPreviousBuildSourceCode": 32,
+      "GatherTestInformationBuild": 0,
+      "CloneRepository": 13,
+      "CheckoutPatchedBuild": 0,
+      "NopolRepair": 19,
+      "PushIncriminatedBuild": 22,
+      "CommitPatch": 5
+    },
+    "BugCommitUrl": "http://github.com/joel-costigliola/assertj-core/commit/c7d3221d000ec7c9c72f225716dc259db587a42a",
+    "NbFailingTests": 4,
+    "PatchCommitUrl": "http://github.com/joel-costigliola/assertj-core/commit/00b55402201000c0d7b2631e4db0287f866e43a6",
+    "ReproductionDate": "Aug 29, 2017 1:10:55 PM",
+    "BuggyBuildId": 200783543,
+    "PatchedBuilId": 200820735,
+    "BuggyBuildURL": "http://travis-ci.org/joel-costigliola/assertj-core/builds/200783543",
+    "PatchedBuildURL": "http://travis-ci.org/joel-costigliola/assertj-core/builds/200820735",
+    "BuggyBuildDate": "Feb 12, 2017 3:24:07 AM",
+    "PatchedBuildDate": "Feb 12, 2017 9:40:05 AM",
+    "BugCommit": "c7d3221d000ec7c9c72f225716dc259db587a42a",
+    "PatchCommit": "00b55402201000c0d7b2631e4db0287f866e43a6",
+    "PatchChangedFiles": 3,
+    "PatchAddedLines": 0,
+    "PatchDeletedLines": 0,
+    "NbRunningTests": 8908,
+    "NbLibraries": 9,
+    "NbFileApp": 952,
+    "NbFileTests": 4466,
+    "NbCPU": 32,
+    "FreeMemory": 917545808,
+    "TotalMemory": 1843920896,
+    "AngelicValuesByTest": {
+      "org/example/custom/CustomAsserts_filter_stacktrace_Test": 0
+    },
+    "FreeMemoryByStep": {
+      "CheckoutBuggyBuildSourceCode": 397747280,
+      "ComputeClasspath": 814679560,
+      "ComputeTestDir": 445615056,
+      "GatherTestInformationPreviousBuildSourceCode": 547948360,
+      "ResolveDependency": 380735112,
+      "BuildProjectBuild": 533926016,
+      "BuildProjectPreviousBuildSourceCode": 761962704,
+      "TestProjectBuild": 1634092784,
+      "ComputeSourceDir": 459950832,
+      "InitRepoToPush": 820743288,
+      "TestProjectPreviousBuildSourceCode": 718515208,
+      "GatherTestInformationBuild": 1488124464,
+      "CloneRepository": 532965624,
+      "CheckoutPatchedBuild": 543783200,
+      "NopolRepair": 742670400,
+      "PushIncriminatedBuild": 1115571120,
+      "CommitPatch": 917545808
+    }
+  },
+  "bugCommit": "https://github.com/joel-costigliola/assertj-core/compare/44518e3dacb3...c7d3221d000e",
+  "failingModule": "/root/workspace/joel-costigliola/assertj-core/200783543",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 4,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 8908,
+  "failing-test-cases": [
+    {
+      "className": "org.example.custom.CustomAsserts_filter_stacktrace_Test",
+      "failingMethods": [
+        "org.example.custom.CustomAsserts_filter_stacktrace_Test#should_filter_when_custom_assert_fails_with_message",
+        "org.example.custom.CustomAsserts_filter_stacktrace_Test#should_filter_when_custom_assert_throws_assertion_error",
+        "org.example.custom.CustomAsserts_filter_stacktrace_Test#should_filter_when_abstract_custom_assert_fails",
+        "org.example.custom.CustomAsserts_filter_stacktrace_Test#should_filter_when_custom_assert_fails_with_overridden_message"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpecting elements:\n\u003c[org.example.custom.CustomAsserts_filter_stacktrace_Test$CustomAbstractAssert.failInAbstractAssert(CustomAsserts_filter_stacktrace_Test.java:112)]\u003e\n of \n\u003c[org.assertj.core.api.AbstractAssert.failWithMessage(AbstractAssert.java:112),\n    org.example.custom.CustomAsserts_filter_stacktrace_Test$CustomAbstractAssert.failInAbstractAssert(CustomAsserts_filter_stacktrace_Test.java:112),\n    org.example.custom.CustomAsserts_filter_stacktrace_Test.should_filter_when_abstract_custom_assert_fails(CustomAsserts_filter_stacktrace_Test.java:57),\n    sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method),\n    sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62),\n    sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43),\n    java.lang.reflect.Method.invoke(Method.java:498),\n    org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50),\n    org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12),\n    org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47),\n    org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17),\n    org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26),\n    org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27),\n    org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325),\n    org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78),\n    org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57),\n    org.junit.runners.ParentRunner$3.run(ParentRunner.java:290),\n    org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71),\n    org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288),\n    org.junit.runners.ParentRunner.access$000(ParentRunner.java:58),\n    org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268),\n    org.junit.runners.ParentRunner.run(ParentRunner.java:363),\n    org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367),\n    org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274),\n    org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238),\n    org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161),\n    org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290),\n    org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242),\n    org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)]\u003e\n not to be \u003cStackTraceElement of class org.example.custom.CustomAsserts_filter_stacktrace_Test$CustomAbstractAssert\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpecting elements:\n\u003c[org.example.custom.CustomAsserts_filter_stacktrace_Test$CustomAssert.fail(CustomAsserts_filter_stacktrace_Test.java:95)]\u003e\n of \n\u003c[org.assertj.core.api.AbstractAssert.failWithMessage(AbstractAssert.java:112),\n    org.example.custom.CustomAsserts_filter_stacktrace_Test$CustomAssert.fail(CustomAsserts_filter_stacktrace_Test.java:95),\n    org.example.custom.CustomAsserts_filter_stacktrace_Test.should_filter_when_custom_assert_fails_with_message(CustomAsserts_filter_stacktrace_Test.java:30),\n    sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method),\n    sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62),\n    sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43),\n    java.lang.reflect.Method.invoke(Method.java:498),\n    org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50),\n    org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12),\n    org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47),\n    org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17),\n    org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26),\n    org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27),\n    org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325),\n    org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78),\n    org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57),\n    org.junit.runners.ParentRunner$3.run(ParentRunner.java:290),\n    org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71),\n    org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288),\n    org.junit.runners.ParentRunner.access$000(ParentRunner.java:58),\n    org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268),\n    org.junit.runners.ParentRunner.run(ParentRunner.java:363),\n    org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367),\n    org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274),\n    org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238),\n    org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161),\n    org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290),\n    org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242),\n    org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)]\u003e\n not to be \u003cStackTraceElement of class org.example.custom.CustomAsserts_filter_stacktrace_Test$CustomAssert\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpecting elements:\n\u003c[org.example.custom.CustomAsserts_filter_stacktrace_Test$CustomAssert.throwAnAssertionError(CustomAsserts_filter_stacktrace_Test.java:100)]\u003e\n of \n\u003c[org.example.custom.CustomAsserts_filter_stacktrace_Test$CustomAssert.throwAnAssertionError(CustomAsserts_filter_stacktrace_Test.java:100),\n    org.example.custom.CustomAsserts_filter_stacktrace_Test.should_filter_when_custom_assert_throws_assertion_error(CustomAsserts_filter_stacktrace_Test.java:48),\n    sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method),\n    sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62),\n    sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43),\n    java.lang.reflect.Method.invoke(Method.java:498),\n    org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50),\n    org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12),\n    org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47),\n    org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17),\n    org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26),\n    org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27),\n    org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325),\n    org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78),\n    org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57),\n    org.junit.runners.ParentRunner$3.run(ParentRunner.java:290),\n    org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71),\n    org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288),\n    org.junit.runners.ParentRunner.access$000(ParentRunner.java:58),\n    org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268),\n    org.junit.runners.ParentRunner.run(ParentRunner.java:363),\n    org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367),\n    org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274),\n    org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238),\n    org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161),\n    org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290),\n    org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242),\n    org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)]\u003e\n not to be \u003cStackTraceElement of class org.example.custom.CustomAsserts_filter_stacktrace_Test$CustomAssert\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpecting elements:\n\u003c[org.example.custom.CustomAsserts_filter_stacktrace_Test$CustomAssert.fail(CustomAsserts_filter_stacktrace_Test.java:95)]\u003e\n of \n\u003c[org.example.custom.CustomAsserts_filter_stacktrace_Test$CustomAssert.fail(CustomAsserts_filter_stacktrace_Test.java:95),\n    org.example.custom.CustomAsserts_filter_stacktrace_Test.should_filter_when_custom_assert_fails_with_overridden_message(CustomAsserts_filter_stacktrace_Test.java:39),\n    sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method),\n    sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62),\n    sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43),\n    java.lang.reflect.Method.invoke(Method.java:498),\n    org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50),\n    org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12),\n    org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47),\n    org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17),\n    org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26),\n    org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27),\n    org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325),\n    org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78),\n    org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57),\n    org.junit.runners.ParentRunner$3.run(ParentRunner.java:290),\n    org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71),\n    org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288),\n    org.junit.runners.ParentRunner.access$000(ParentRunner.java:58),\n    org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268),\n    org.junit.runners.ParentRunner.run(ParentRunner.java:363),\n    org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367),\n    org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274),\n    org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238),\n    org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161),\n    org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290),\n    org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242),\n    org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)]\u003e\n not to be \u003cStackTraceElement of class org.example.custom.CustomAsserts_filter_stacktrace_Test$CustomAssert\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 4,
+      "nbErrors": 0
+    }
+  ]
+}

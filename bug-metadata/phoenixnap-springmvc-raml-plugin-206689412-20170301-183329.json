@@ -1,0 +1,100 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "phoenixnap/springmvc-raml-plugin",
+  "metrics": {
+    "FailureNames": [
+      "org.junit.ComparisonFailure"
+    ],
+    "StepsDurationsInSeconds": {
+      "CheckoutBuggyBuild": 0,
+      "ComputeClasspath": 3,
+      "ComputeTestDir": 0,
+      "ResolveDependency": 34,
+      "BuildProjectBuild": 20,
+      "TestProjectBuild": 24,
+      "ComputeSourceDir": 0,
+      "InitRepoToPush": 1,
+      "BuildProjectPreviousBuild": 35,
+      "GatherTestInformationBuild": 0,
+      "CloneRepository": 2,
+      "NopolRepair": 9,
+      "CheckoutPatchedBuild": 0,
+      "PushIncriminatedBuild": 2,
+      "CommitPatch": 2,
+      "TestProjectPreviousBuild": 13,
+      "GatherTestInformationPreviousBuild": 0
+    },
+    "PatchCommitUrl": "http://github.com/phoenixnap/springmvc-raml-plugin/commit/40649fb1a8f7126cee5258f940b73b39bfce7674",
+    "BugCommitUrl": "http://github.com/phoenixnap/springmvc-raml-plugin/commit/bba96a35dc7c856c004d853246da5cc13a0926e4",
+    "NbFailingTests": 1,
+    "NbLibraries": 123,
+    "NbFileApp": 330,
+    "NbFileTests": 136,
+    "NbCPU": 32,
+    "FreeMemory": 944409528,
+    "TotalMemory": 1162870784,
+    "AngelicValuesByTest": {
+      "com/phoenixnap/oss/ramlapisync/generation/rules/RamlEquivalenceRulesTest": 0
+    },
+    "FreeMemoryByStep": {
+      "CheckoutBuggyBuild": 681319888,
+      "ComputeClasspath": 749213400,
+      "ComputeTestDir": 629367360,
+      "ResolveDependency": 613539472,
+      "BuildProjectBuild": 1085890328,
+      "TestProjectBuild": 1072121856,
+      "ComputeSourceDir": 647994336,
+      "InitRepoToPush": 754611472,
+      "BuildProjectPreviousBuild": 602987016,
+      "GatherTestInformationBuild": 1066258288,
+      "CloneRepository": 692486040,
+      "NopolRepair": 572545880,
+      "CheckoutPatchedBuild": 1094337816,
+      "PushIncriminatedBuild": 973503552,
+      "CommitPatch": 944409528,
+      "TestProjectPreviousBuild": 591556432,
+      "GatherTestInformationPreviousBuild": 581475176
+    },
+    "ReproductionDate": "May 9, 2017 5:59:34 PM",
+    "BuggyBuildId": 206687768,
+    "PatchedBuilId": 206689412,
+    "BuggyBuildURL": "http://travis-ci.org/phoenixnap/springmvc-raml-plugin/builds/206687768",
+    "PatchedBuildURL": "http://travis-ci.org/phoenixnap/springmvc-raml-plugin/builds/206689412",
+    "BuggyBuildDate": "Mar 1, 2017 6:23:44 PM",
+    "PatchedBuildDate": "Mar 1, 2017 6:33:29 PM",
+    "BugCommit": "bba96a35dc7c856c004d853246da5cc13a0926e4",
+    "PatchCommit": "40649fb1a8f7126cee5258f940b73b39bfce7674",
+    "PatchChangedFiles": 1,
+    "PatchAddedLines": 0,
+    "PatchDeletedLines": 0,
+    "NbRunningTests": 176
+  },
+  "bugCommit": "https://github.com/phoenixnap/springmvc-raml-plugin/compare/64498bb68bdc...bba96a35dc7c",
+  "failingModule": "/root/workspace/phoenixnap/springmvc-raml-plugin/206687768/springmvc-raml-parser",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 176,
+  "failing-test-cases": [
+    {
+      "className": "com.phoenixnap.oss.ramlapisync.generation.rules.RamlEquivalenceRulesTest",
+      "failingMethods": [
+        "com.phoenixnap.oss.ramlapisync.generation.rules.RamlEquivalenceRulesTest#applySpring4ControllerDecoratorRule_shouldCreate_validCode"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...--------------------[-com.gen.test.PersonController.java-----------------------------------  package com.gen.test;  import java.util.List; import org.springframework.http.ResponseEntity;   /**  * No description  * (Generated with springmvc-raml-parser v.0.10.0-SNAPSHOT)  *   */ public interface PersonController {       /**      * No description      *       */     public ResponseEntity\u003cList\u003ccom.gen.test.model.Person\u003e\u003e getPersons();      /**      * No description      *       */     public ResponseEntity\u003c?\u003e createPerson(com.gen.test.model.Person person);  } -----------------------------------com.gen.test.PersonControllerDecorator.java-----------------------------------  package com.gen.test;  import java.util.List; import javax.validation.Valid; import org.springframework.beans.factory.annotation.Autowired; import org.springframework.http.ResponseEntity; import org.springframework.web.bind.annotation.RequestBody; import org.springframework.web.bind.annotation.RequestMapping; import org.springframework.web.bind.annotation.RequestMethod; import org.springframework.web.bind.annotation.RestController;   /**  * No description  * (Generated with springmvc-raml-parser v.0.10.0-SNAPSHOT)  *   */ @RestController @RequestMapping(value \u003d \"/api/persons\", produces \u003d \"application/json\") public class PersonControllerDecorator     implements PersonController {      @Autowired     private PersonController personControllerDelegate;      /**      * No description      *       */     @RequestMapping(value \u003d \"\", method \u003d RequestMethod.GET)     public ResponseEntity\u003cList\u003ccom.gen.test.model.Person\u003e\u003e getPersons() {         return this.personControllerDelegate.getPersons();     }      /**      * No description      *       */     @RequestMapping(value \u003d \"\", method \u003d RequestMethod.POST)     public ResponseEntity\u003c?\u003e createPerson(         @Valid         @RequestBody         com.gen.test.model.Person person) {         return this.personControllerDelegate.createPerson(person);     }  } ] \u003e but was:\u003c...--------------------[com.gen.test.PersonController.java-----------------------------------  package com.gen.test;  import java.util.List; import org.springframework.http.ResponseEntity;   /**  * No description  * (Generated with springmvc-raml-parser v.0.10.0-SNAPSHOT)  *   */ public interface PersonController {       /**      * No description      *       */     public ResponseEntity\u003cList\u003ccom.gen.test.model.Person\u003e\u003e getPersons();      /**      * No description      *       */     public ResponseEntity\u003c?\u003e createPerson(com.gen.test.model.Person person);  } -----------------------------------com.gen.test.PersonControllerDecorator.java-----------------------------------  package com.gen.test;  import java.util.List; import javax.validation.Valid; import org.springframework.beans.factory.annotation.Autowired; import org.springframework.http.ResponseEntity; import org.springframework.web.bind.annotation.RequestBody; import org.springframework.web.bind.annotation.RequestMapping; import org.springframework.web.bind.annotation.RequestMethod; import org.springframework.web.bind.annotation.RestController;   /**  * No description  * (Generated with springmvc-raml-parser v.0.10.0-SNAPSHOT)  *   */ @RestController @RequestMapping(value \u003d \"/api/persons\", produces \u003d \"application/json\") public class PersonControllerDecorator     implements PersonController {      @Autowired     private PersonController personControllerDelegate;      /**      * No description      *       */     @RequestMapping(value \u003d \"\", method \u003d RequestMethod.GET)     public ResponseEntity\u003cList\u003ccom.gen.test.model.Person\u003e\u003e getPersons() {         return this.personControllerDelegate.getPersons();     }      /**      * No description      *       */     @RequestMapping(value \u003d \"\", method \u003d RequestMethod.POST)     public ResponseEntity\u003c?\u003e createPerson(         @Valid         @RequestBody         com.gen.test.model.Person person) {         return this.personControllerDelegate.createPerson(person);     }  }] \u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "totalNumberSkippingTests": 21,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "CloudSlang/cloud-slang",
+  "metrics": {
+    "FailureNames": [
+      "java.lang.AssertionError"
+    ],
+    "StepsDurationsInSeconds": {
+      "CheckoutBuggyBuild": 0,
+      "ComputeClasspath": 6,
+      "ComputeTestDir": 0,
+      "ResolveDependency": 36,
+      "BuildProjectBuild": 35,
+      "TestProjectBuild": 162,
+      "ComputeSourceDir": 0,
+      "InitRepoToPush": 6,
+      "BuildProjectPreviousBuild": 72,
+      "GatherTestInformationBuild": 0,
+      "CloneRepository": 8,
+      "NopolRepair": 23,
+      "CheckoutPatchedBuild": 0,
+      "PushIncriminatedBuild": 6,
+      "CommitPatch": 6,
+      "TestProjectPreviousBuild": 305,
+      "GatherTestInformationPreviousBuild": 0
+    },
+    "PatchCommitUrl": "http://github.com/CloudSlang/cloud-slang/commit/96e34b37c9efd83eeb956bab381769e8a48e058f",
+    "BugCommitUrl": "http://github.com/CloudSlang/cloud-slang/commit/c5b8b9ddd87d2629595d971320eb15bc4465d350",
+    "NbFailingTests": 2,
+    "NbLibraries": 89,
+    "NbFileApp": 470,
+    "NbFileTests": 246,
+    "NbCPU": 32,
+    "FreeMemory": 906147256,
+    "TotalMemory": 1639448576,
+    "AngelicValuesByTest": {
+      "io/cloudslang/lang/systemtests/flows/ValueSyntaxInFlowTest": 0,
+      "io/cloudslang/lang/systemtests/flows/ValueSyntaxInOperationTest": 0
+    },
+    "FreeMemoryByStep": {
+      "CheckoutBuggyBuild": 659375720,
+      "ComputeClasspath": 668412136,
+      "ComputeTestDir": 626962208,
+      "ResolveDependency": 611192744,
+      "BuildProjectBuild": 1308549224,
+      "TestProjectBuild": 1284175752,
+      "ComputeSourceDir": 640434136,
+      "InitRepoToPush": 670053176,
+      "BuildProjectPreviousBuild": 589328048,
+      "GatherTestInformationBuild": 1266418664,
+      "CloneRepository": 673945368,
+      "NopolRepair": 1462095448,
+      "CheckoutPatchedBuild": 1322717256,
+      "PushIncriminatedBuild": 1024819464,
+      "CommitPatch": 906147256,
+      "TestProjectPreviousBuild": 557665536,
+      "GatherTestInformationPreviousBuild": 534450456
+    },
+    "ReproductionDate": "May 10, 2017 12:35:46 AM",
+    "BuggyBuildId": 211350341,
+    "PatchedBuilId": 211407112,
+    "BuggyBuildURL": "http://travis-ci.org/CloudSlang/cloud-slang/builds/211350341",
+    "PatchedBuildURL": "http://travis-ci.org/CloudSlang/cloud-slang/builds/211407112",
+    "BuggyBuildDate": "Mar 15, 2017 2:50:24 PM",
+    "PatchedBuildDate": "Mar 15, 2017 5:09:53 PM",
+    "BugCommit": "c5b8b9ddd87d2629595d971320eb15bc4465d350",
+    "PatchCommit": "96e34b37c9efd83eeb956bab381769e8a48e058f",
+    "PatchChangedFiles": 2,
+    "PatchAddedLines": 0,
+    "PatchDeletedLines": 0,
+    "NbRunningTests": 985
+  },
+  "bugCommit": "https://github.com/CloudSlang/cloud-slang/compare/1f863d4688f2...c5b8b9ddd87d",
+  "failingModule": "/root/workspace/CloudSlang/cloud-slang/211350341/cloudslang-tests",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 985,
+  "failing-test-cases": [
+    {
+      "className": "io.cloudslang.lang.systemtests.flows.ValueSyntaxInFlowTest",
+      "failingMethods": [
+        "io.cloudslang.lang.systemtests.flows.ValueSyntaxInFlowTest#testValues"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Executable inputs not bound correctly expected:\u003c{input_expression_characters\u003ddocker run -d -e AUTHORIZED_KEYS\u003d${base64 -w0 ./auth} -p 8888:22 --name test1 -v /data:, output_no_expression_input\u003doutput_no_expression_value, enableOptionForAction\u003denable_option_for_action_value, input_yaml_map\u003d{\u0027key1\u0027: \u0027value1\u0027, \u0027key2\u0027: \u0027value2\u0027, \u0027key3\u0027: \u0027value3\u0027}, step_argument_null\u003dstep_argument_null_value, b\u003db, scp_host_port\u003d8888, input_str_double\u003dHi, enable_option_for_action\u003denable_option_for_action_value, input_no_value_tag\u003dinput_no_value_tag_value, input_private\u003d25, authorized_keys_path\u003d./auth, input_python_null\u003dnull, input_no_expression\u003dinput_no_expression_value, input_no_expression_not_required\u003dnull, b_copy\u003db, input_concat_1\u003dab, input_properties_yaml_map_folded\u003dmedium, input_int\u003d22, input_system_property\u003dlocalhost, input_str_single\u003dHi, input_yaml_list\u003d[1, 2, 3], input_concat_2_folded\u003dprefix_ab_suffix, input_str_no_quotes\u003dHi}\u003e but was:\u003c{enable_option_for_action\u003denable_option_for_action_value, enableOptionForAction\u003denable_option_for_action_value, output_no_expression_input\u003doutput_no_expression_value, authorized_keys_path\u003d./auth, scp_host_port\u003d8888, input_no_expression\u003dinput_no_expression_value, input_no_expression_not_required\u003dnull, input_system_property\u003dlocalhost, input_private\u003d25, input_int\u003d22, input_str_no_quotes\u003dHi, input_str_single\u003dHi, input_str_double\u003dHi, input_yaml_list\u003d[1, 2, 3], input_properties_yaml_map_folded\u003dmedium, input_yaml_map\u003d{\u0027key1\u0027: \u0027value1\u0027, \u0027key2\u0027: \u0027value2\u0027, \u0027key3\u0027: \u0027value3\u0027}, input_python_null\u003dnull, b\u003db, b_copy\u003db, input_concat_1\u003dab, input_concat_2_folded\u003dprefix_ab_suffix, input_expression_characters\u003ddocker run -d -e AUTHORIZED_KEYS\u003d${base64 -w0 ./auth} -p 8888:22 --name test1 -v /data:, step_argument_null\u003dstep_argument_null_value}\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "io.cloudslang.lang.systemtests.flows.ValueSyntaxInOperationTest",
+      "failingMethods": [
+        "io.cloudslang.lang.systemtests.flows.ValueSyntaxInOperationTest#testValues"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Executable inputs not bound correctly expected:\u003c{input_expression_characters\u003ddocker run -d -e AUTHORIZED_KEYS\u003d${base64 -w0 ./auth} -p 8888:22 --name test1 -v /data:, output_no_expression_input\u003doutput_no_expression_value, enableOptionForAction\u003denable_option_for_action_value, input_yaml_map\u003d{\u0027key1\u0027: \u0027value1\u0027, \u0027key2\u0027: \u0027value2\u0027, \u0027key3\u0027: \u0027value3\u0027}, step_argument_null\u003dstep_argument_null_value, b\u003db, scp_host_port\u003d8888, input_str_double\u003dHi, enable_option_for_action\u003denable_option_for_action_value, input_no_value_tag\u003dinput_no_value_tag_value, input_private\u003d25, authorized_keys_path\u003d./auth, input_python_null\u003dnull, input_no_expression\u003dinput_no_expression_value, input_no_expression_not_required\u003dnull, b_copy\u003db, input_concat_1\u003dab, input_properties_yaml_map_folded\u003dmedium, input_int\u003d22, input_system_property\u003dlocalhost, input_str_single\u003dHi, input_yaml_list\u003d[1, 2, 3], input_concat_2_folded\u003dprefix_ab_suffix, input_str_no_quotes\u003dHi}\u003e but was:\u003c{enable_option_for_action\u003denable_option_for_action_value, enableOptionForAction\u003denable_option_for_action_value, output_no_expression_input\u003doutput_no_expression_value, authorized_keys_path\u003d./auth, scp_host_port\u003d8888, input_no_expression\u003dinput_no_expression_value, input_no_expression_not_required\u003dnull, input_system_property\u003dlocalhost, input_private\u003d25, input_int\u003d22, input_str_no_quotes\u003dHi, input_str_single\u003dHi, input_str_double\u003dHi, input_yaml_list\u003d[1, 2, 3], input_properties_yaml_map_folded\u003dmedium, input_yaml_map\u003d{\u0027key1\u0027: \u0027value1\u0027, \u0027key2\u0027: \u0027value2\u0027, \u0027key3\u0027: \u0027value3\u0027}, input_python_null\u003dnull, b\u003db, b_copy\u003db, input_concat_1\u003dab, input_concat_2_folded\u003dprefix_ab_suffix, input_expression_characters\u003ddocker run -d -e AUTHORIZED_KEYS\u003d${base64 -w0 ./auth} -p 8888:22 --name test1 -v /data:, step_argument_null\u003dstep_argument_null_value}\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}

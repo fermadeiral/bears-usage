@@ -1,0 +1,100 @@
+{
+  "totalNumberSkippingTests": 0,
+  "bugType": "failing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "OWASP/java-html-sanitizer",
+  "metrics": {
+    "FailureNames": [
+      "junit.framework.ComparisonFailure"
+    ],
+    "StepsDurationsInSeconds": {
+      "CheckoutBuggyBuild": 0,
+      "ComputeClasspath": 13,
+      "ComputeTestDir": 0,
+      "ResolveDependency": 40,
+      "BuildProjectBuild": 21,
+      "TestProjectBuild": 50,
+      "ComputeSourceDir": 0,
+      "InitRepoToPush": 3,
+      "BuildProjectPreviousBuild": 61,
+      "GatherTestInformationBuild": 0,
+      "CloneRepository": 9,
+      "NopolRepair": 776,
+      "CheckoutPatchedBuild": 0,
+      "PushIncriminatedBuild": 5,
+      "CommitPatch": 4,
+      "TestProjectPreviousBuild": 45,
+      "GatherTestInformationPreviousBuild": 0
+    },
+    "PatchCommitUrl": "http://github.com/OWASP/java-html-sanitizer/commit/3c0d8ebd2555cbf08bec8c2030ab28749a5f3445",
+    "NbFailingTests": 1,
+    "BugCommitUrl": "http://github.com/OWASP/java-html-sanitizer/commit/c2d3ba9887680d260ea44a3528d500e6f3b669de",
+    "NbLibraries": 8,
+    "NbFileApp": 82,
+    "NbFileTests": 52,
+    "NbCPU": 32,
+    "FreeMemory": 1694682032,
+    "TotalMemory": 6447693824,
+    "AngelicValuesByTest": {
+      "org/owasp/html/TagBalancingHtmlStreamRendererTest": 278
+    },
+    "FreeMemoryByStep": {
+      "CheckoutBuggyBuild": 553013328,
+      "ComputeClasspath": 713183008,
+      "ComputeTestDir": 542825384,
+      "ResolveDependency": 768312864,
+      "BuildProjectBuild": 2323183344,
+      "TestProjectBuild": 2292870016,
+      "ComputeSourceDir": 546608888,
+      "InitRepoToPush": 714502032,
+      "BuildProjectPreviousBuild": 761320456,
+      "GatherTestInformationBuild": 2201992384,
+      "CloneRepository": 556780464,
+      "NopolRepair": 2353465032,
+      "CheckoutPatchedBuild": 2353465032,
+      "PushIncriminatedBuild": 1800632008,
+      "CommitPatch": 1694682032,
+      "TestProjectPreviousBuild": 759340904,
+      "GatherTestInformationPreviousBuild": 755265320
+    },
+    "ReproductionDate": "May 11, 2017 4:39:46 PM",
+    "BuggyBuildId": 220085794,
+    "PatchedBuilId": 220087638,
+    "BuggyBuildURL": "http://travis-ci.org/OWASP/java-html-sanitizer/builds/220085794",
+    "PatchedBuildURL": "http://travis-ci.org/OWASP/java-html-sanitizer/builds/220087638",
+    "BuggyBuildDate": "Apr 8, 2017 8:33:41 PM",
+    "PatchedBuildDate": "Apr 8, 2017 8:44:18 PM",
+    "BugCommit": "c2d3ba9887680d260ea44a3528d500e6f3b669de",
+    "PatchCommit": "3c0d8ebd2555cbf08bec8c2030ab28749a5f3445",
+    "PatchChangedFiles": 3,
+    "PatchAddedLines": 0,
+    "PatchDeletedLines": 0,
+    "NbRunningTests": 258
+  },
+  "bugCommit": "https://github.com/OWASP/java-html-sanitizer/compare/82be198dd2b6...c2d3ba988768",
+  "failingModule": "/root/workspace/OWASP/java-html-sanitizer/220085794",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "junit.framework.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 258,
+  "failing-test-cases": [
+    {
+      "className": "org.owasp.html.TagBalancingHtmlStreamRendererTest",
+      "failingMethods": [
+        "org.owasp.html.TagBalancingHtmlStreamRendererTest#testTablesGuarded"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "junit.framework.ComparisonFailure",
+          "failureDetail": "expected:\u003c...p\u003e\u003cp\u003eHow are you\u003c/p\u003e[\u003cul\u003e\u003cli\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003cb\u003e\u003cfont\u003e\u003cfont\u003e\u003cp\u003eCell\u003c/p\u003e\u003c/font\u003e\u003c/font\u003e \u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003e\u003cb\u003e\u003cfont\u003e\u003cfont\u003e\u003cp\u003eCell\u003c/p\u003e\u003c/font\u003e\u003c/font\u003e \u003c/b\u003e\u003c/b\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/li\u003e\u003c/ul\u003e]\u003cb\u003e\u003cb\u003e\u003cp\u003ex\u003c/p\u003e\u003c/b\u003e\u003c/...\u003e but was:\u003c...p\u003e\u003cp\u003eHow are you\u003c/p\u003e[ \u003cul\u003e\u003cli\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003cb\u003e\u003cfont\u003e\u003cfont\u003e\u003cp\u003eCell\u003c/p\u003e\u003c/font\u003e\u003c/font\u003e \u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003e\u003cb\u003e\u003cfont\u003e\u003cfont\u003e\u003cp\u003eCell\u003c/p\u003e\u003c/font\u003e\u003c/font\u003e \u003c/b\u003e\u003c/b\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003c/li\u003e\u003c/ul\u003e ]\u003cb\u003e\u003cb\u003e\u003cp\u003ex\u003c/p\u003e\u003c/b\u003e\u003c/...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ]
+}

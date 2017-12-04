@@ -1,0 +1,106 @@
+{
+  "totalNumberSkippingTests": 10,
+  "bugType": "passing_passing",
+  "totalNumberErroringTests": 0,
+  "repo": "sakaiproject/sakai",
+  "metrics": {
+    "FailureNames": [
+      "org.junit.ComparisonFailure"
+    ],
+    "StepsDurationsInSeconds": {
+      "CheckoutBuggyBuildSourceCode": 4,
+      "ComputeClasspath": 3,
+      "ComputeTestDir": 1,
+      "GatherTestInformationPreviousBuildSourceCode": 1,
+      "ResolveDependency": 25,
+      "BuildProjectBuild": 113,
+      "BuildProjectPreviousBuildSourceCode": 431,
+      "TestProjectBuild": 362,
+      "ComputeSourceDir": 3,
+      "InitRepoToPush": 40,
+      "TestProjectPreviousBuildSourceCode": 314,
+      "GatherTestInformationBuild": 1,
+      "CloneRepository": 138,
+      "CheckoutPatchedBuild": 1,
+      "NopolRepair": 31,
+      "PushIncriminatedBuild": 22,
+      "CommitPatch": 33
+    },
+    "BugCommitUrl": "http://github.com/sakaiproject/sakai/commit/49e465ca7bbcc80d652a95158161fa9cdfd824cf",
+    "NbFailingTests": 2,
+    "PatchCommitUrl": "http://github.com/sakaiproject/sakai/commit/b14f50f7b743456d98670a20bbf9a811913485f9",
+    "ReproductionDate": "Sep 4, 2017 12:53:25 PM",
+    "BuggyBuildId": 230828769,
+    "PatchedBuilId": 231623712,
+    "BuggyBuildURL": "http://travis-ci.org/sakaiproject/sakai/builds/230828769",
+    "PatchedBuildURL": "http://travis-ci.org/sakaiproject/sakai/builds/231623712",
+    "BuggyBuildDate": "May 10, 2017 6:39:29 PM",
+    "PatchedBuildDate": "May 12, 2017 6:40:12 PM",
+    "BugCommit": "49e465ca7bbcc80d652a95158161fa9cdfd824cf",
+    "PatchCommit": "b14f50f7b743456d98670a20bbf9a811913485f9",
+    "PatchChangedFiles": 5,
+    "PatchAddedLines": 0,
+    "PatchDeletedLines": 0,
+    "NbRunningTests": 1025,
+    "NbLibraries": 174,
+    "NbFileApp": 6018,
+    "NbFileTests": 644,
+    "NbCPU": 32,
+    "FreeMemory": 1921515080,
+    "TotalMemory": 5262278656,
+    "AngelicValuesByTest": {
+      "org/sakaiproject/util/impl/FormattedTextTest": 0
+    },
+    "FreeMemoryByStep": {
+      "CheckoutBuggyBuildSourceCode": 1240837744,
+      "ComputeClasspath": 1669141272,
+      "ComputeTestDir": 1752791504,
+      "GatherTestInformationPreviousBuildSourceCode": 776925408,
+      "ResolveDependency": 1218858432,
+      "BuildProjectBuild": 3931962144,
+      "BuildProjectPreviousBuildSourceCode": 962186816,
+      "TestProjectBuild": 3838456752,
+      "ComputeSourceDir": 2338924184,
+      "InitRepoToPush": 1686371000,
+      "TestProjectPreviousBuildSourceCode": 904614904,
+      "GatherTestInformationBuild": 3769623440,
+      "CloneRepository": 1357917000,
+      "CheckoutPatchedBuild": 4063835376,
+      "NopolRepair": 1931117760,
+      "PushIncriminatedBuild": 3629832504,
+      "CommitPatch": 1921515080
+    }
+  },
+  "bugCommit": "https://github.com/sakaiproject/sakai/compare/44c87baeb7152267074002cb9dcb55eb59948b1e...49e465ca7bbcc80d652a95158161fa9cdfd824cf",
+  "failingModule": "/root/workspace/sakaiproject/sakai/230828769/kernel/kernel-impl",
+  "hostname": "spirals-vortex.lille.inria.fr",
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 1025,
+  "failing-test-cases": [
+    {
+      "className": "org.sakaiproject.util.impl.FormattedTextTest",
+      "failingMethods": [
+        "org.sakaiproject.util.impl.FormattedTextTest#testAntisamyProcessFormattedText",
+        "org.sakaiproject.util.impl.FormattedTextTest#testTargetNotOverridden"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...k\" class\u003d\"arbitrary\"[ rel\u003d\"noopener\"]\u003elink\u003c/a\u003e\u003e but was:\u003c...k\" class\u003d\"arbitrary\"[]\u003elink\u003c/a\u003e\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c...ld;\" target\u003d\"_blank\"[ rel\u003d\"noopener\"]\u003eblah\u003c/a\u003e\u003cdiv\u003ehello ...\u003e but was:\u003c...ld;\" target\u003d\"_blank\"[]\u003eblah\u003c/a\u003e\u003cdiv\u003ehello ...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ]
+}
