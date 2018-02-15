@@ -1,9 +1,6 @@
 package fr.inria.spirals.bears.usage.model;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by fermadeiral on 31/08/17.
@@ -29,8 +26,8 @@ public class Benchmark {
         this.bugTypeToCounterMap = new HashMap<>();
     }
 
-    public Bug addBug(String branchName, Project project) {
-        Bug bug = new Bug(branchName, project);
+    public Bug addBug(String branchName, Project project, Date buggyBuildDate) {
+        Bug bug = new Bug(branchName, project, buggyBuildDate);
         this.bugs.add(bug);
         project.addBug(bug);
         return bug;

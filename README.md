@@ -32,11 +32,13 @@
 
   [--initialDateCriterion <format dd/MM/yyyy>]
         Search criterion: specify the initial date to analyze branches (e.g.
-        01/01/2017).
+        01/01/2017). Note that the search starts from 00:00:00 of the specified
+        date.
 
   [--finalDateCriterion <format dd/MM/yyyy>]
         Search criterion: specify the final date to analyze branches (e.g.
-        31/01/2017).
+        31/01/2017). Note that the search is until 23:59:59 of the specified
+        date.
 
   [--maxEstimatedBuildAndTestDurationCriterion <maxEstimatedBuildAndTestDurationCriterion>]
         Search criterion: specify the maximum duration that is estimated to

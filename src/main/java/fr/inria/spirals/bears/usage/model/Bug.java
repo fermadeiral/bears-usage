@@ -1,5 +1,6 @@
 package fr.inria.spirals.bears.usage.model;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,15 +11,17 @@ public class Bug {
 
     private String branchName;
     private Project project;
+    private Date patchedBuildDate;
     private int numberOfFailingTests;
     private Map<ExceptionType, Integer> exceptionTypeToOccurrenceCounterMap;
     private Map<String, Integer> stepToDurationMap;
     private int reproductionDuration;
     private int estimatedBuildAndTestDuration;
 
-    Bug(String branchName, Project project) {
+    Bug(String branchName, Project project, Date patchedBuildDate) {
         this.branchName = branchName;
         this.project = project;
+        this.patchedBuildDate = patchedBuildDate;
         this.exceptionTypeToOccurrenceCounterMap = new HashMap<>();
         this.stepToDurationMap = new HashMap<>();
     }
@@ -29,6 +32,10 @@ public class Bug {
 
     public Project getProject() {
         return this.project;
+    }
+
+    public Date getPatchedBuildDate() {
+        return this.patchedBuildDate;
     }
 
     public void setNumberOfFailingTests(int numberOfFailingTests) {

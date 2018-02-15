@@ -13,6 +13,8 @@ import java.io.File;
 import java.io.FileFilter;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Iterator;
 
 /**
@@ -51,7 +53,18 @@ public class JsonParser {
 
                 Project project = benchmark.addProject(projectName);
 
-                Bug bug = benchmark.addBug(branchName, project);
+                JSONObject metrics = (JSONObject) jsonBug.get("metrics");
+
+                String patchedBuildDateStr = metrics.get("PatchedBuildDate").toString();
+                SimpleDateFormat sdf = new SimpleDateFormat("MMM dd, yyyy hh:mm:ss a");
+                Date patchedBuildDate = null;
+                try {
+                  patchedBuildDate = sdf.parse(patchedBuildDateStr);
+                } catch (java.text.ParseException e) {
+                    e.printStackTrace();
+                }
+
+                Bug bug = benchmark.addBug(branchName, project, patchedBuildDate);
 
                 String bugTypeDescription = (String) jsonBug.get("bugType");
                 benchmark.addBugType(bugTypeDescription);
@@ -67,8 +80,6 @@ public class JsonParser {
                         bug.addExceptionType(exceptionType);
                     }
                 }
-
-                JSONObject metrics = (JSONObject) jsonBug.get("metrics");
 
                 int numberOfFailingTests = Integer.parseInt(metrics.get("NbFailingTests").toString());
                 bug.setNumberOfFailingTests(numberOfFailingTests);

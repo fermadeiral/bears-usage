@@ -96,14 +96,14 @@ public class Launcher {
         opt.setLongFlag("initialDateCriterion");
         opt.setStringParser(dateStringParser);
         opt.setUsageName("format dd/MM/yyyy");
-        opt.setHelp("Search criterion: specify the initial date to analyze branches (e.g. 01/01/2017).");
+        opt.setHelp("Search criterion: specify the initial date to analyze branches (e.g. 01/01/2017). Note that the search starts from 00:00:00 of the specified date.");
         this.jsap.registerParameter(opt);
 
         opt = new FlaggedOption("finalDateCriterion");
         opt.setLongFlag("finalDateCriterion");
         opt.setStringParser(dateStringParser);
         opt.setUsageName("format dd/MM/yyyy");
-        opt.setHelp("Search criterion: specify the final date to analyze branches (e.g. 31/01/2017).");
+        opt.setHelp("Search criterion: specify the final date to analyze branches (e.g. 31/01/2017). Note that the search is until 23:59:59 of the specified date.");
         this.jsap.registerParameter(opt);
 
         opt = new FlaggedOption("maxEstimatedBuildAndTestDurationCriterion");
@@ -163,8 +163,8 @@ public class Launcher {
         if (this.exceptionTypeCriterion != null) {
             searchCriteria.add(new ExceptionTypeCriterion(this.exceptionTypeCriterion));
         }
-        if (this.initialDateCriterion == null || this.finalDateCriterion == null) {
-            searchCriteria.add(new BuildDateCriterion(this.initialDateCriterion, this.finalDateCriterion));
+        if (this.initialDateCriterion != null || this.finalDateCriterion != null) {
+            searchCriteria.add(new PatchedBuildDateCriterion(this.initialDateCriterion, this.finalDateCriterion));
         }
         if (this.maxEstimatedBuildAndTestDurationCriterion > -1) {
             searchCriteria.add(new MaxEstimatedBuildAndTestDurationCriterion(this.maxEstimatedBuildAndTestDurationCriterion));
